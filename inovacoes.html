@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inovações - Moderna I</title>
+    <style>
+
+:root{--parchment:#efe1bd;--paper:#fbf5e5;--ink:#2b2118;--brown:#553a27;--burgundy:#681f2b;--burgundy-dark:#45131c;--gold:#b08a3c;--gold-light:#d6bb73;--line:#a98245;--shadow:rgba(54,34,18,.22)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{margin:0;min-height:100vh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;font-size:18px;line-height:1.65;background:radial-gradient(circle at 20% 20%,rgba(255,255,255,.28),transparent 30%),radial-gradient(circle at 80% 80%,rgba(105,68,28,.09),transparent 35%),var(--parchment);overflow-x:hidden}
+body:before,body:after{content:"";position:fixed;z-index:-1;pointer-events:none;border:1px solid rgba(176,138,60,.18)}
+body:before{inset:10px}body:after{inset:17px}
+a{color:var(--burgundy)}a:hover{color:var(--gold)}
+header{width:min(980px,92%);margin:0 auto;padding:62px 20px 25px;text-align:center}
+header:before{content:"✦  ✧  ✦";display:block;color:var(--gold);letter-spacing:10px;font-size:17px;margin-bottom:12px}
+h1,h2{font-family:Georgia,'Times New Roman',serif;color:var(--burgundy-dark);letter-spacing:.035em}
+header h1{font-size:clamp(2.35rem,6vw,4.5rem);margin:0;padding:0 0 16px;text-shadow:1px 1px 0 #e5d39e}
+header h1:after{content:"";display:block;width:190px;height:9px;margin:14px auto 0;border-top:2px solid var(--gold);border-bottom:1px solid var(--gold)}
+header p{max-width:760px;margin:18px auto;font-size:1.18em}
+.grid{width:min(1050px,94%);margin:18px auto 58px;display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:26px;padding:12px}
+.quadrado{min-height:235px;padding:28px;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;text-decoration:none;color:#fbf5e5;background:linear-gradient(rgba(104,31,43,.95),rgba(69,19,28,.98));border:2px solid var(--gold);outline:1px solid var(--gold);outline-offset:-9px;box-shadow:8px 10px 0 rgba(69,19,28,.10),0 10px 24px var(--shadow);transition:.2s ease;position:relative;font-family:Georgia,'Times New Roman',serif;font-size:1.42em;font-weight:700}
+.quadrado:before,.quadrado:after{position:absolute;color:var(--gold-light);font-size:23px}.quadrado:before{content:"❦";top:10px;left:16px}.quadrado:after{content:"❧";bottom:8px;right:16px}.quadrado:hover{color:#fff8e6;transform:translateY(-4px);box-shadow:10px 14px 27px var(--shadow);background:var(--burgundy-dark)}
+.quadrado span{margin-top:10px;max-width:270px;color:#ead8a9;font-family:Georgia,'Times New Roman',serif;font-size:.72em;font-weight:400;line-height:1.4}
+footer{width:100%;padding:22px 8%;display:flex;justify-content:space-between;gap:18px;align-items:center;color:#fbf5e5;background:var(--burgundy-dark);border-top:4px double var(--gold);font-family:Georgia,'Times New Roman',serif}.logo-placeholder{color:var(--gold-light);font-weight:700}
+.container{width:min(900px,92%);margin:48px auto;padding:50px clamp(24px,6vw,72px);background:linear-gradient(rgba(255,255,255,.14),rgba(255,255,255,.14)),var(--paper);border:2px solid var(--gold);outline:1px solid var(--gold);outline-offset:-10px;box-shadow:10px 12px 30px var(--shadow);position:relative}
+.container:before{content:"❦";position:absolute;top:13px;left:24px;color:var(--gold);font-size:26px}.container:after{content:"❧";position:absolute;bottom:11px;right:24px;color:var(--gold);font-size:26px}
+.container h1{text-align:center;font-size:clamp(1.9rem,4vw,3rem);margin:8px 0 26px;padding:0 30px 16px;border-bottom:3px double var(--gold)}.container h1:first-letter{font-size:1.2em}
+.container h2{font-size:1.4em;margin-top:30px;padding-bottom:6px;border-bottom:1px solid rgba(176,138,60,.55)}
+p{text-align:justify;overflow-wrap:anywhere}.container p:first-of-type:first-letter{float:left;font-family:Georgia,'Times New Roman',serif;font-size:3.2em;line-height:.75;padding:8px 8px 0 0;color:var(--burgundy)}
+.voltar{display:inline-block;color:var(--burgundy);text-decoration:none;font-family:Georgia,'Times New Roman',serif;font-size:.88em;font-weight:700;letter-spacing:.02em;padding:6px 0}.voltar:hover{text-decoration:underline;color:var(--gold)}
+.meta-info{text-align:center;font-style:italic;margin-bottom:34px;color:var(--brown);padding:10px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold)}
+.lista-verbetes{list-style:none;padding:0;margin-top:24px}.lista-verbetes li{padding:15px 7px;border-bottom:1px solid rgba(169,130,69,.45);position:relative}.lista-verbetes li:before{content:"✦";color:var(--gold);margin-right:10px}.lista-verbetes a{text-decoration:none;color:var(--burgundy);font-family:Georgia,'Times New Roman',serif;font-size:1.04em;font-weight:700}.lista-verbetes a:hover{color:var(--gold)}
+ul:not(.lista-verbetes):not(.referencias){padding-left:1.2rem}ul.referencias{list-style:none;padding-left:0}ul.referencias li{margin-bottom:12px;text-align:justify;text-indent:-26px;padding-left:26px;overflow-wrap:anywhere}
+.category-page>ul{list-style:none;padding:0;margin:24px 0}.category-page>ul li{margin:0;border-bottom:1px solid rgba(169,130,69,.45)}.category-page>ul li a{display:block;padding:16px 8px;text-decoration:none;color:var(--burgundy);font-weight:700}.category-page>ul li a:before{content:"✦";color:var(--gold);margin-right:11px}.category-page>ul li a:hover{background:rgba(176,138,60,.08);color:var(--gold)}
+@media (max-width:700px){
+ body{font-size:16px;line-height:1.58}body:before{inset:5px}body:after{inset:10px}
+ header{width:100%;padding:34px 16px 16px}header:before{font-size:14px;letter-spacing:6px;margin-bottom:8px}header h1{font-size:clamp(2rem,12vw,3rem);padding-bottom:12px}header h1:after{width:145px;margin-top:10px}header p{font-size:1rem;line-height:1.5;margin:14px auto;max-width:95%}
+ .grid{width:100%;margin:8px auto 34px;padding:10px 14px;grid-template-columns:1fr;gap:15px}.quadrado{min-height:155px;padding:25px 20px;font-size:1.18em;outline-offset:-7px}.quadrado:before{top:8px;left:11px;font-size:19px}.quadrado:after{bottom:6px;right:11px;font-size:19px}.quadrado span{font-size:.78em;max-width:290px;margin-top:7px}
+ .container{width:calc(100% - 24px);margin:22px auto;padding:34px 20px;outline-offset:-7px;box-shadow:5px 7px 18px var(--shadow)}.container:before{top:8px;left:12px;font-size:20px}.container:after{bottom:7px;right:12px;font-size:20px}.container h1{font-size:clamp(1.7rem,9vw,2.35rem);padding:0 10px 12px;margin:7px 0 21px}.container h2{font-size:1.2em;margin-top:25px}p{text-align:left}.container p:first-of-type:first-letter{font-size:2.7em}
+ .meta-info{font-size:.92em;margin-bottom:25px;padding:8px 5px}.category-page>ul{margin-top:18px}.category-page>ul li a{padding:14px 5px;line-height:1.4}
+ .voltar{font-size:.82em}footer{padding:17px 15px;flex-direction:column;text-align:center;gap:6px;font-size:.9em}
+}
+@media (max-width:380px){body{font-size:15px}header{padding-top:28px}.grid{padding:8px 10px}.quadrado{min-height:145px;padding:22px 16px}.container{width:calc(100% - 16px);padding:31px 16px}.container h1{font-size:1.7rem}.container h2{font-size:1.12em}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.quadrado{transition:none}}
+
+</style>
+</head>
+<body>
+    <header>
+        <h1>Moderna I</h1>
+        <p>Transformações nos saberes, na organização do tempo e na circulação da informação.</p>
+    </header>
+    <main class="container category-page">
+        <a href="index.html" class="voltar">← Voltar para o Menu Principal</a>
+        <h1>Inovações</h1>
+        <ul>
+            <li><a href="verbete_modelo.html?titulo=Ciências">Ciências</a></li>
+            <li><a href="verbete_modelo.html?titulo=Tempo">Tempo</a></li>
+            <li><a href="verbete_modelo.html?titulo=Imprensa">Imprensa</a></li>
+        </ul>
+    </main>
+    <footer>
+        <span>Moderna I — Imaginários Modernos</span>
+        <span class="logo-placeholder">❦</span>
+    </footer>
+</body>
+</html>
