@@ -137,32 +137,134 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 @media(max-width:430px){.grid{grid-template-columns:1fr;max-width:350px}.quadrado .category-card-art{width:72%;margin:auto}.category-card-note{display:none}.home-page header{min-height:270px}}
 
 </style>
-</head>
+<style>
+.article-verbetes{width:min(1040px,94%);padding:56px clamp(24px,6vw,76px)}
+.article-verbetes .article-title{font-size:clamp(1.75rem,4.6vw,3.05rem);line-height:1.18;margin-bottom:16px}
+.article-verbetes .meta-info{font-size:.92rem;line-height:1.5}
+.article-verbetes .lead{font-size:1.08rem}
+.article-verbetes .texto-verbetes p{margin:0 0 22px}
+.article-verbetes .texto-verbetes p:first-child:first-letter{float:left;font-size:3.25em;line-height:.72;padding:8px 9px 0 0;color:var(--burg);font-weight:bold}
+.article-verbetes .imagem-atividade{margin:36px auto 30px;text-align:center;max-width:900px}
+.article-verbetes .imagem-atividade img{display:block;width:100%;height:auto;border:2px solid var(--gold);box-shadow:0 12px 25px var(--shadow);background:#fff}
+.article-verbetes .imagem-atividade figcaption{margin:10px auto 0;max-width:820px;color:var(--ink-soft);font-size:.88rem;font-style:italic;line-height:1.45}
+.article-verbetes .atividade{margin-top:48px;padding-top:8px}
+.article-verbetes .atividade h2{text-align:center;font-size:clamp(1.45rem,4vw,2rem);padding:14px 12px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);color:var(--burg2);text-transform:uppercase}
+.article-verbetes .atividade-intro{padding:18px 22px;background:rgba(184,136,50,.08);border-left:4px solid var(--gold);margin:26px 0 34px}
+.article-verbetes .questao{margin:30px 0 34px;padding:22px 24px;background:rgba(255,255,255,.28);border:1px solid rgba(138,98,41,.45);box-shadow:0 5px 13px rgba(45,25,8,.08)}
+.article-verbetes .questao h3{margin:0 0 12px;color:var(--navy);font-size:1.08rem;letter-spacing:.05em;text-transform:uppercase}
+.article-verbetes .alternativas{list-style:none!important;padding:0!important;margin:16px 0 0!important}
+.article-verbetes .alternativas li{margin:8px 0;padding:9px 12px;border-bottom:1px solid rgba(169,130,69,.35);text-align:left!important;text-indent:0!important}
+.article-verbetes .referencias-titulo{margin-top:46px}
+.article-verbetes .referencias li{font-size:.96rem}
+@media(max-width:700px){
+ .article-verbetes{width:calc(100% - 16px);padding:42px 21px}
+ .article-verbetes .article-title{font-size:clamp(1.55rem,7.5vw,2.25rem)}
+ .article-verbetes .lead{font-size:1rem}
+ .article-verbetes .imagem-atividade{margin-top:28px}
+ .article-verbetes .atividade-intro{padding:15px 17px}
+ .article-verbetes .questao{padding:18px 17px}
+}
+</style>
+
 <body class="article-page-body">
-    <div class="container">
+    <main class="container article-verbetes">
         <div class="nav-ornament"></div>
         <a href="corpos_costumes.html" class="voltar">← Voltar para Corpos e Costumes</a>
-        
-        <h1>Festas e Celebrações</h1>
+
+        <h1 class="article-title">Apropriação, Controle Social e Resignificação das Festas Populares da Idade Moderna ao Carnaval Contemporâneo</h1>
         <div class="meta-info">
-            Categoria: Corpos e Costumes | Período: Idade Moderna (Séc. XV - XVIII) | Redigido em 3ª pessoa (Normas ABNT)
+            <strong>Verbete: Festas</strong> · Categoria: Corpos e Costumes · Idade Moderna e seus desdobramentos contemporâneos
         </div>
-        
-        <h2>1. Introdução</h2>
-        <p>As festas e celebrações populares na Idade Moderna constituíam momentos fundamentais de sociabilidade, reiteração de valores comunitários e, por vezes, de contestação simbólica das ordens estabelecidas. O presente verbete aborda como o calendário festivo articulava o tempo religioso, agrário e político da sociedade europeia moderna.</p>
 
-        <h2>2. Desenvolvimento</h2>
-        <p>Durante os séculos XV ao XVIII, o cotidiano das populações europeias era ritmado por um densíssimo calendário litúrgico e festivo. Festas de santos padroeiros, procissões, o Carnaval e festividades reais mobilizavam comunidades inteiras. Conforme aponta a historiografia cultural, essas celebrações não representavam meros momentos de lazer desprovidos de sentido, mas sim complexos rituais onde as hierarquias sociais podiam ser temporariamente subvertidas ou, ao contrário, reforçadas sob o crivo do controle e da tolerância institucional.</p>
-        <p>Com o advento das Reformas Religiosas (tanto a Protestante quanto a Católica pós-Concílio de Trento), grande parte dessas manifestações passou por um rigoroso processo de censura e disciplina eclesiástica e estatal. As autoridades buscaram erradicar excesos carnavalescos e práticas consideradas pagãs, moldando uma piedade mais interiorizada e regrada. Não obstante, o povo manteve grande parte de sua autonomia festiva, reelaborando tradições em festas cívicas e religiosas locais.</p>
+        <article class="texto-verbetes">
+            <p class="lead">As festividades populares não constituem territórios neutros ou momentos de mera descompressão idílica, mas sim campos de contínuos embates e negociações de poder entre agentes sociais com interesses profundamente assimétricos. Como bem problematiza o historiador Durval Muniz de Albuquerque Júnior, a festa opera como a irrupção de um novo tempo e a reinscrição do espaço urbano, constituindo uma ruptura decisiva com a rotina e a ordem da simulação, da invenção e do delírio. Longe de ser uma manifestação homogênea, a celebração carnavalesca e sazonal é uma arena de disputas na qual se confrontam projetos de controle simbólico e táticas de resistência comunitária. Governos, elites laicas, instituições eclesiásticas e camadas subalternas digladiam-se historicamente para definir as permissões, as proibições, os códigos comportamentais e os limites estéticos daquilo que pode ser exibido ou silenciado no cenário público.</p>
 
-        <h2>3. Conclusão</h2>
-        <p>Infere-se que as festas na Idade Moderna funcionavam como um espelho das tensões, crenças e estruturas de poder da época. Ao analisar o fenômeno festivo, historiadores e pesquisadores conseguem desvendar as mentalidades e os imaginários de uma sociedade em profunda transformação entre o medievo e a modernidade.</p>
+            <p>Na Europa do início da Idade Moderna, por volta de 1500, a relação entre a cultura erudita das elites e a cultura popular caracterizava-se por uma fluidez assimétrica descrita por Peter Burke através do conceito de biculturalidade. As classes dominantes, constituídas pela nobreza, patriciado urbano e clero, dominavam a grande tradição letrada das universidades e cortes, mas também participavam ativamente da pequena tradição oral e comunitária do povo. Nomes proeminentes da Renascença como Lorenzo de' Medici e Niccolò Machiavelli misturavam-se mascarados às multidões nas ruas de Florença durante o Carnaval, enquanto monarcas como Henrique VIII colhiam ramos festivos no Primeiro de Maio. Nesse estágio inicial, a festa funcionava como um terreno compartilhado de sociabilidade, no qual os rituais de inversão eram vivenciados por toda a pirâmide social sem que a participação das elites significasse a perda imediata de seu prestígio político.</p>
 
-        <h2>Referências</h2>
+            <p>Entretanto, entre meados do século XVII e o final do século XVIII, consolidou-se um movimento historiográfico decisivo identificado por Burke como a retirada das elites. Adestradas por novos manuais de civilidade e cortesia que prescreviam o autocontrole rigoroso dos afetos, o decoro corporal e o refinamento das maneiras, as classes abastadas passaram a encarar os folguedos tradicionais de rua como manifestações de grosseria, desordem e perigosa vulgaridade. A nobreza e a burguesia emergente abandonaram progressivamente as praças públicas, recolhendo-se a espaços privados de sociabilidade exclusiva, como os salões, os teatros de ópera e os clubes fechados. Quando as elites mantiveram interesse pelas formas lúdicas populares, fizeram-no mediante um processo de apropriação e estilização estética, convertendo o mascaramento caótico das ruas na rígida e aristocrática máscara cortesã formal, concebida para encenar o esplendor do soberano e neutralizar qualquer viés de subversão.</p>
+
+            <p>Simultaneamente à retirada laica, desdobrou-se a Reforma da Cultura Popular, promovida de forma contígua por reformadores católicos e protestantes. Empenhados em disciplinar os costumes e erradicar o que classificavam como superstição pagã ou licenciosidade moral, sacerdotes e magistrados desfecharam uma ostensiva investida contra o calendário festivo. Rituais tradicionais ligados ao ciclo agrícola e religioso, como o Carnaval, a Festa dos Bobos e as fogueiras do Solstício de Verão, foram sistematicamente censurados. Para conter a profanação do sagrado, a Igreja substituiu os ritos tradicionais por práticas eclesiásticas estritamente supervisionadas, procurando extirpar a antiga familiaridade popular com as coisas divinas e impor um padrão de religiosidade centrado na contrição, na moralização dos corpos e na obediência hierárquica.</p>
+
+            <p>A permissão temporária do caos lúdico pelas autoridades do Antigo Regime fundamentava-se na célebre metáfora do barril de vinho, conceituada originalmente em 1444 por teólogos franceses em defesa da Festa dos Bobos. De acordo com essa perspectiva funcionalista de governabilidade, a natureza humana e a estrutura social assemelham-se a velhos odres de vinho que estouram inevitavelmente se o respiradouro do gás de fermentação não for aberto em períodos determinados. O Carnaval e as festas de inversão funcionavam, portanto, como uma válvula de escape institucionalizada, permitindo que a tolice e a frustração acumuladas pelas privações cotidianas se evaporassem de forma lúdica. Ao conceder alguns dias de desordem ritual, as elites buscavam assegurar a submissão e a estabilidade social durante o restante do ano, estipulando que o julgamento e a queima simbólica do boneco de Momo assinalavam o retorno sóbrio e compulsório à ordem vigente.</p>
+
+            <p>Contudo, a interpretação da festa popular exclusivamente como instrumento de conservação da ordem foi profundamente desafiada por Mikhail Bakhtin em sua obra clássica sobre François Rabelais. Bakhtin demonstra que o carnavalesco não se reduz a uma concessão passiva ou a um mero mecanismo de controle estatal, mas constitui a verdadeira segunda vida do povo. No espaço carnavalesco, mediante o riso ambivalente, o realismo grotesco do corpo e a abolição provisória de todas as barreiras hierárquicas, os sujeitos subalternos experimentam um mundo utópico de igualdade e abundância. O riso popular carnavalesco desmistifica as verdades dogmáticas oficiais, o terror eclesiástico e a gravidade do poder, revelando a transitoriedade de todas as ordens estabelecidas e afirmando a renovação constante da vida.</p>
+
+            <p>A eficácia da válvula de escape revelou-se historicamente precária e limitada. Em momentos de aguda crise de subsistência, carestia de alimentos ou agravamento do arrocho tributário, ocorria o que a historiografia identifica como transferência de códigos. Nestas conjunturas críticas, a população abandonava a linguagem cênica do ritual para adotar a ação política direta e a rebelião armada. Reunindo multidões mascaradas, organizadas e alcoolizadas no espaço urbano, a festa convertia-se no cenário propício para insurreições reais. Episódios emblemáticos como os Carnavais de Berna em 1513, de Romans em 1580 e de Dijon em 1630 demonstram como o lúdico podia metamorfosear-se em sangrentos motins populares e revoltas camponesas contra a exploração senhorial.</p>
+
+            <p>Ademais, como demonstram os estudos de Natalie Zemon Davis sobre as sociedades de jovens e as Abbayes de Mère Folle na França moderna, as associações populares utilizavam o aparato cômico e os ritos de charivari não apenas para o entretenimento, mas como instâncias cotidianas de justiça comunitária e crítica política. Os mascarados parodiavam autoridades corruptas, zombavam de impostos abusivos e puniam desvios morais locais. A desordem festiva era imbuída de intenção política e agência subalterna, comprovando que os grupos populares sabiam manipular as brechas da licença ritual para defender suas prerrogativas morais e econômicas frente às investidas do Estado absolutista.</p>
+
+            <p>A transposição das estratégias europeias de controle social para o Brasil manifestou-se com clareza ao longo do século XIX na guerra declarada pelas elites urbanas e pela imprensa contra o Entrudo de rua. Classificado pelas posturas policiais como uma brincadeira bárbara, imoral e incompatível com os ideais de civilidade da nascente República, o entrudo popular de matriz portuguesa e africana foi sistematicamente reprimido. Em seu lugar, as classes dominantes importaram os modelos do Carnaval burguês europeu, promovendo uma rígida segregação espacial entre os Bailes de Salão fechados em clubes luxuosos e o Corso motorizado nas grandes avenidas. No corso, as famílias abastadas ostentavam seu capital simbólico a partir de automóveis ornamentados, confinando a população negra e trabalhadora à calçada na condição de meros espectadores passivos.</p>
+
+            <p>Na década de 1930, sob a ditadura do Estado Novo e a interventoria de Agamenon Magalhães em Pernambuco, o controle sobre a folia assumiu contornos institucionais e pedagógicos através da fundação da Federação Carnavalesca Pernambucana em 1934. A FECAPE centralizou a distribuição de subvenções públicas, condicionando o repasse de verbas à filiação compulsória das agremiações e ao cumprimento de estatutos severos. O objetivo estatal era transformar os clubes pedestres, troças e maracatus em núcleos educativos voltados para moralizar o operariado, vetar a pregação político-partidária, combater a penetração do comunismo e inculcar um sentimento de nativismo sadio. A institucionalização impôs censura prévia às composições musicais, horários rígidos para o recolhimento dos cortejos e a normatização dos passos do frevo, buscando substituir a efervescência anárquica da rua pela disciplina de desfiles organizados.</p>
+
+            <p>A partir dos anos 1960 e 1970, com a intervenção de órgãos de fomento ao turismo como a EMETUR, a festa recifense foi progressivamente submetida à lógica da espetacularização e do consumo de massa. A montagem de passarelas oficiais e a cobrança de ingressos para arquibancadas paralelas alteraram a cartografia tradicional do centro urbano. Intelectuais e folcloristas como Mário Melo e Waldemar de Oliveira denunciaram que a passarela estabelecia uma aristocracia no festejo ao isolar as agremiações por cordões de proteção, destruindo o histórico Carnaval participação e transformando o povo brincante em um público apático de braços cruzados.</p>
+
+            <p>No cenário contemporâneo, a apropriação e o controle das festas populares foram sofisticados pelas dinâmicas do mercado neoliberal. A privatização do espaço público consolida-se através da lógica do pague para brincar, onde a profusão de blocos de abadás, cordões de isolamento pagos e camarotes VIP elevados reinstala barreiras invisíveis de classe e raça no solo da folia. Simultaneamente, grandes corporações colonizam o calendário e os territórios festivos, ditando horários e normas estéticas em detrimento dos mestres e comunidades tradicionais que gestam os saberes populares.</p>
+
+            <p>Em contrapartida, conforme enfatiza a análise do Mídia NINJA, o Carnaval nas periferias urbanas opera como uma autêntica tecnologia social e infraestrutura comunitária. Onde o Estado se mostra negligente na oferta de políticas públicas básicas de cultura, lazer e assistência, as agremiações, escolas de samba e maracatus organizam redes de apoio mútuo, capacitação técnica, geração de renda e mediação política. Contudo, a historiografia crítica adverte para a armadilha de romantizar a resiliência dessas comunidades, uma vez que o discurso governamental que exalta a autogestão popular serve frequentemente para camuflar desigualdades estruturais e eximir o poder público de suas obrigações constitucionais.</p>
+
+            <p>Fundamentando-se nas formulações de Roger Chartier sobre a apropriação, constata-se que a população subalterna nunca aceitou passivamente os projetos disciplinares ou a mercantilização do festejo. Os praticantes da festa desenvolvem contínuas táticas de desvio e micro-resistências cotidianas, fraudando regulamentos, ocupando frestas do espaço urbano e ressignificando os símbolos impostos de cima.</p>
+
+            <p>A festa popular permanece, assim, como um território vivo de invenção e afirmação da existência cultural, onde o povo ordinário reafirma sua capacidade de reinventar a rua e produzir novos sentidos para a vida social.</p>
+        </article>
+
+        <section class="atividade">
+            <h2>Atividade: As Disputas de Poder no Espaço Urbano — Entre a Profanação e a Disciplina</h2>
+            <div class="atividade-intro">
+                <p><strong>O Combate entre o Carnaval e a Quaresma</strong> é uma obra pintada por Pieter Bruegel, o Velho, em 1559.</p>
+                <p>A composição de Bruegel revela que a praça pública não é neutra; trata-se de um território disputado. De um lado, a fartura, o riso profano e a efervescência coletiva capturam a maioria dos corpos e a atenção da população. Do outro, a Quaresma e a Igreja tentam impor o jejum, a penitência e a ordem moral. Na cena, a presença de ícones religiosos caídos ou marginalizados no chão da praça explicita a fragilidade da autoridade eclesiástica diante da força da cultura popular.</p>
+            </div>
+
+            <figure class="imagem-atividade">
+                <img src="assets/bruegel_carnaval_quaresma.jpg" alt="O Combate entre o Carnaval e a Quaresma, de Pieter Bruegel, o Velho, 1559">
+                <figcaption>Pieter Bruegel, o Velho. <em>O Combate entre o Carnaval e a Quaresma</em>, 1559.</figcaption>
+            </figure>
+
+            <div class="questao">
+                <h3>Questão 1</h3>
+                <p>Ao olhar para a pintura de Bruegel, fica claro que a maioria das pessoas prefere participar da bagunça e da fartura do Carnaval do que seguir a rigidez da Quaresma. Além disso, vemos imagens e símbolos religiosos largados no chão da praça enquanto a festa acontece.</p>
+                <p>Observando esses detalhes da cena, responda: por que essa atitude da população de “deixar a religião de lado” durante o Carnaval mostra que a festa de rua não era apenas uma diversão passageira, mas sim uma forma do povo desafiar as regras e a autoridade da Igreja?</p>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 2</h3>
+                <p>A pintura retrata a praça pública como uma arena dividida entre dois modelos de mundo: o do excesso carnavalesco e o da rigidez quaresmal. A preferência visual e física da multidão pelo lado do Carnaval demonstra que:</p>
+                <ol class="alternativas">
+                    <li><strong>(A)</strong> A Igreja católica exercia controle total sobre o comportamento da população rural e urbana, anulando qualquer tentativa de crítica social.</li>
+                    <li><strong>(B)</strong> Os rituais populares possuíam capacidade de hegemonizar temporariamente o espaço urbano, desafiando a gravidade dos dogmas e a disciplina moral da Igreja.</li>
+                    <li><strong>(C)</strong> A população da Época Moderna não possuía sentimentos religiosos, utilizando o Carnaval para erradicar definitivamente as instituições eclesiásticas.</li>
+                    <li><strong>(D)</strong> A festa popular era um evento estritamente passivo e comercial, organizado pelo Estado para evitar revoltas camponesas.</li>
+                </ol>
+            </div>
+
+            <div class="questao">
+                <h3>Questão 3</h3>
+                <p>A imagem de símbolos religiosos largados no chão da praça, enquanto as pessoas ao redor estão mascaradas, comendo e festejando, nos ajuda a entender o poder do Carnaval popular. Essa cena representa:</p>
+                <ol class="alternativas">
+                    <li><strong>(A)</strong> O uso da brincadeira e da bagunça para misturar o que era “sagrado” com a vida comum do povo, desafiando, mesmo que por pouco tempo, a autoridade e a seriedade da Igreja.</li>
+                    <li><strong>(B)</strong> A obediência total do povo às regras da elite e da Igreja, mostrando que a população só festejava do jeito que os poderosos permitiam.</li>
+                    <li><strong>(C)</strong> O sucesso da Quaresma em acabar com a festa de rua, restaurando o silêncio, a ordem e o respeito rigoroso às imagens religiosas.</li>
+                    <li><strong>(D)</strong> A separação da festa em espaços privados e fechados (como os camarotes atuais), o que impedia o povo de ocupar a rua livremente.</li>
+                </ol>
+            </div>
+        </section>
+
+        <h2 class="referencias-titulo">Referências</h2>
         <ul class="referencias">
-            <li>BURKE, Peter. <em>Cultura popular na Idade Moderna</em>: Europa, 1500-1800. São Paulo: Companhia das Letras, 2010.</li>
-            <li>CHARTIER, Roger (Org.). <em>A história cultural</em>: práticas e representações. Lisboa: Difel, 1990.</li>
+            <li>ALBUQUERQUE JÚNIOR, Durval Muniz de. <em>Festa para que te quero: por uma historiografia do festejar</em>. Revista Patrimônio e Memória, UNESP, v. 7, n. 1, p. 134-150, jun. 2011.</li>
+            <li>BAKHTIN, Mikhail. <em>A cultura popular na Idade Média e no Renascimento: o contexto de François Rabelais</em>. 3. ed. São Paulo: Hucitec, 1996.</li>
+            <li>BURKE, Peter. <em>Cultura popular na Idade Moderna: Europa, 1500-1800</em>. São Paulo: Companhia das Letras, 2010.</li>
+            <li>CERTEAU, Michel de. <em>A invenção do cotidiano: 1. Artes de fazer</em>. 18. ed. Petrópolis: Vozes, 2012.</li>
+            <li>CHARTIER, Roger. Cultura popular: revisitando um conceito historiográfico. <em>Estudos Históricos</em>, Rio de Janeiro, v. 8, n. 16, p. 179-192, 1995.</li>
+            <li>DAVIS, Natalie Zemon. <em>Sociedade e cultura na França Moderna</em>. Rio de Janeiro: Julho Medeiros, 1990.</li>
+            <li>MÍDIA NINJA. Carnaval como tecnologia social: quando a cultura sustenta o que deveria ser política pública. Mídia NINJA, 2024.</li>
+            <li>SANTOS, Mário Ribeiro dos. O Estado, a festa e a cidade: medidas de controle e ordem nos dias de Carnaval no Recife (1930-1945). In: GUILLEN, I. C. M.; SILVA, A. N. (org.). <em>Tempos de folia: estudos sobre o carnaval no Recife</em>. Recife: Editora Massangana, 2018. p. 79-112.</li>
+            <li>SILVA, Augusto Neves da. <em>Metamorfoses de uma festa: Histórias do carnaval em Recife (1955-1972)</em>. Revista Crítica Histórica, Maceió, v. 6, n. 11, p. 196-224, jul. 2015.</li>
         </ul>
-    </div>
+    </main>
+    <footer>
+        <span>Moderna I — Imaginários Modernos</span>
+        <span class="logo-placeholder">❦</span>
+    </footer>
 </body>
 </html>
