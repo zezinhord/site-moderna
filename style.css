@@ -133,3 +133,12 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 .category-card-art{image-rendering:auto;display:block;width:100%;height:100%;object-fit:cover;}
 .institution-brand img{display:block;width:auto;height:auto;max-width:230px;max-height:95px;object-fit:contain;}
 @media (max-width:700px){.institution-brand img{max-width:175px;max-height:78px;}}
+
+/* AUTORIA PADRONIZADA DOS VERBETES */
+.autor-verbete{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 14px;width:min(760px,94%);margin:2px auto 24px;padding:12px 18px;text-align:center;color:var(--ink-soft);background:rgba(239,224,184,.35);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:.96rem;line-height:1.5}
+.autor-verbete .autor-label{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--burg2);font-weight:bold}
+.autor-verbete strong{color:var(--ink);font-size:1rem}
+.autor-verbete .separador{color:var(--gold);font-weight:bold}
+.autor-verbete a{color:var(--burg);font-weight:bold;text-decoration:none;border-bottom:1px solid rgba(184,136,50,.65);padding-bottom:1px}
+.autor-verbete a:hover{color:var(--navy)}
+@media(max-width:700px){.autor-verbete{width:100%;font-size:.9rem;margin-bottom:20px;padding:11px 13px;gap:4px 9px}.autor-verbete .autor-label{font-size:.72rem}}
