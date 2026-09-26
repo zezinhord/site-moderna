@@ -82,6 +82,10 @@ ul:not(.lista-verbetes):not(.referencias){padding-left:1.2rem}ul.referencias{lis
 footer{position:relative;width:100%;padding:32px 8% 28px;display:flex;justify-content:space-between;align-items:center;gap:18px;color:#f4e5b8;background:var(--navy2);border-top:5px double var(--gold);box-shadow:0 -6px 16px rgba(35,22,10,.18)}
 footer:before{content:"";position:absolute;top:-27px;left:0;width:100%;height:28px;background:url('assets/border_gold.png') center/100% 100% no-repeat}
 .logo-placeholder{color:var(--gold2);font-weight:bold}
+.institution-brand{display:flex;align-items:center;justify-content:center;flex:0 0 auto;padding:4px 8px;background:#000;border:1px solid rgba(232,197,110,.72);box-shadow:0 4px 12px rgba(0,0,0,.25)}
+.institution-brand img{display:block;width:min(250px,42vw);height:auto;max-height:92px;object-fit:contain}
+.footer-course{font-weight:bold;color:#f4e5b8;text-align:right}
+
 
 @media (max-width:700px){
  body{font-size:16px}body:before{inset:5px}body:after{left:11px;top:11px;font-size:25px}
@@ -91,7 +95,8 @@ footer:before{content:"";position:absolute;top:-27px;left:0;width:100%;height:28
  .grid{width:100%;grid-template-columns:1fr;gap:17px;padding:8px 14px;margin-bottom:45px}.quadrado{min-height:235px;padding:34px 34px 30px}.category-icon{width:76px;height:68px}
  .container{width:calc(100% - 22px);margin:27px auto 45px;padding:45px 27px}.container:after{background-size:72px 72px,72px 72px}.container h1{font-size:clamp(1.65rem,8vw,2.35rem);padding:9px 8px 13px}.container h2{font-size:1.15rem;margin-top:26px}p{text-align:left}.container p:first-of-type:first-letter{font-size:2.7em}
  .category-page>ul{margin-top:22px}.category-page>ul li a{min-height:66px;padding:11px 42px;font-size:.96rem}.category-intro img{width:78px;height:70px}
- footer{padding:24px 16px;flex-direction:column;text-align:center;font-size:.9rem}footer:before{height:18px;top:-17px}
+ footer{padding:24px 16px;flex-direction:column;text-align:center;font-size:.9rem}
+ footer .institution-brand img{width:min(230px,70vw)}.footer-course{text-align:center}footer:before{height:18px;top:-17px}
 }
 @media (max-width:380px){header{padding-left:20px;padding-right:20px}.home-page header{min-height:225px}.home-intro{padding:22px 20px}.grid{padding:7px 9px}.quadrado{min-height:215px;padding:30px 26px 28px}.container{width:calc(100% - 14px);padding:40px 21px}.container h1{font-size:1.62rem}.category-page>ul li a{min-height:60px;padding:9px 30px}}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.quadrado,.category-page>ul li a{transition:none}}
@@ -105,7 +110,7 @@ header{background:linear-gradient(180deg,rgba(7,23,35,.98),rgba(20,40,58,.96));b
 header:before,header:after{width:175px;height:175px}
 header h1{font-variant:small-caps;letter-spacing:.045em;border:0;text-shadow:2px 2px 0 #241408;}
 header h1:before,header h1:after{content:"❦"}
-.home-page header{min-height:350px;background:linear-gradient(180deg,rgba(8,23,34,.28),rgba(8,23,34,.82)),url('assets/hero_landscape.png') center 35%/cover no-repeat,var(--navy);}
+.home-page header{min-height:350px;background:linear-gradient(180deg,rgba(8,23,34,.28),rgba(8,23,34,.82)),url('assets/hero_landscape_hd.png') center 35%/cover no-repeat,var(--navy);}
 .home-page header h1{margin-top:44px;background:rgba(14,28,41,.72);border:1px solid var(--gold2);box-shadow:0 0 0 7px rgba(184,136,50,.10);padding:16px 70px 18px}
 .home-page header p{background:rgba(9,24,36,.70);padding:10px 18px;border:1px solid rgba(232,197,110,.55);}
 .home-page header p:after{display:none}
@@ -135,6 +140,12 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
  .category-hero-image{width:min(270px,82%)}
 }
 @media(max-width:430px){.grid{grid-template-columns:1fr;max-width:350px}.quadrado .category-card-art{width:72%;margin:auto}.category-card-note{display:none}.home-page header{min-height:270px}}
+
+
+/* HD ASSETS / QUALIDADE VISUAL */
+.category-card-art{image-rendering:auto;display:block;width:100%;height:100%;object-fit:cover;}
+.institution-brand img{display:block;width:auto;height:auto;max-width:230px;max-height:95px;object-fit:contain;}
+@media (max-width:700px){.institution-brand img{max-width:175px;max-height:78px;}}
 
 </style>
 </head>
