@@ -17,3 +17,10 @@ Esta versão aplica diretamente o novo modelo visual renascentista: cartões ilu
 - `assets/` — imagens e ornamentos do design
 
 Não remova a pasta `assets`, pois as páginas usam esses arquivos.
+
+
+### Novos verbetes
+- `teatro.html` — Quando os Antigos Voltaram ao Palco: O Teatro no Renascimento.
+- `artes_plasticas.html` — A Revolução da Arte no Renascimento.
+- `assets/teatro_titus_andronicus.jpg` — imagem do verbete de Teatro.
+- `assets/artes_ultima_ceia.jpg` — imagem do verbete de Artes Plásticas.
