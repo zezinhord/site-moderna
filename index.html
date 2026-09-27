@@ -148,6 +148,58 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 @media (max-width:700px){.institution-brand img{max-width:175px;max-height:78px;}}
 
 </style>
+
+<style>
+/* ORNAMENTOS ISOLADOS — NOVA COLEÇÃO RENASCENTISTA */
+body:after{content:"";position:fixed;right:10px;bottom:10px;width:92px;height:92px;background:url('assets/canto_br.png') bottom right/contain no-repeat;opacity:.78;pointer-events:none;z-index:1}
+body:before{z-index:0}
+header{position:relative;overflow:hidden}
+header:before{background:url('assets/canto_tl.png') top left/contain no-repeat!important;opacity:.9;z-index:1}
+header:after{background:url('assets/canto_tr.png') top right/contain no-repeat!important;opacity:.9;z-index:1}
+header h1,header p{position:relative;z-index:3}
+.home-page header:after{width:150px;height:150px}
+.home-page header{box-shadow:inset 0 -18px 0 rgba(184,136,50,.14)}
+.home-page header h1:after{content:"";display:block;width:min(540px,90%);height:54px;margin:14px auto -4px;background:url('assets/divisor_azul.png') center/100% 100% no-repeat;opacity:.9}
+.nav-ornament{height:54px;background-image:url('assets/moldura_horizontal.png');background-size:100% 100%;filter:drop-shadow(0 3px 2px rgba(45,25,8,.22))}
+.container{position:relative}
+.container:before{background-image:url('assets/canto_tl.png'),url('assets/canto_tr.png'),url('assets/canto_bl.png'),url('assets/canto_br.png');background-position:top left,top right,bottom left,bottom right;background-size:145px 145px,145px 145px,145px 145px,145px 145px;background-repeat:no-repeat;opacity:.78}
+.container:after{inset:0;background:url('assets/frame_overlay.png') center/100% 100% no-repeat;opacity:.18}
+.container h1{position:relative}
+.container h1:after{content:"";display:block;width:min(460px,82%);height:34px;margin:12px auto -5px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat}
+.category-page>ul li a:before{content:"";display:block;flex:0 0 30px;width:30px;height:30px;margin-right:12px;background:url('assets/flor_de_lis.png') center/contain no-repeat}
+.category-page>ul li:nth-child(2) a:before{background-image:url('assets/sol_renascentista.png')}
+.category-page>ul li:nth-child(3) a:before{background-image:url('assets/rosa_dos_ventos.png')}
+.category-page>ul li:nth-child(4) a:before{background-image:url('assets/ornamento_livro.png')}
+.autor-verbete:before{content:"";display:block;width:72px;height:28px;margin-right:4px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.85}
+.autor-verbete:after{content:"";display:block;width:72px;height:28px;margin-left:4px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.85;transform:scaleX(-1)}
+footer{position:relative;overflow:hidden}
+footer:before{background-image:url('assets/divisor_azul.png');height:34px;top:-29px;opacity:.95}
+footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;height:82px;background:url('assets/coluna_classica.png') right bottom/contain no-repeat;opacity:.38;pointer-events:none}
+.institution-brand{position:relative;z-index:3}
+.institution-brand:after{content:"";display:block;width:160px;height:42px;margin:4px auto 0;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.75}
+
+@media(max-width:700px){
+ body:after{width:60px;height:60px;right:4px;bottom:4px;opacity:.55}
+ header:before,header:after{width:82px;height:82px}
+ .home-page header:after{width:90px;height:90px}
+ .home-page header h1:after{height:34px;margin-top:10px}
+ .nav-ornament{height:34px}
+ .container:before{background-size:76px 76px,76px 76px,76px 76px,76px 76px}
+ .container h1:after{height:25px;width:86%}
+ .category-page>ul li a:before{flex-basis:24px;width:24px;height:24px;margin-right:8px}
+ .autor-verbete:before,.autor-verbete:after{width:42px;height:20px}
+ footer:after{display:none}
+ .institution-brand:after{width:120px;height:28px}
+}
+@media(max-width:430px){
+ body:after{display:none}
+ header:before,header:after{width:58px;height:58px}
+ .container:before{background-size:55px 55px,55px 55px,55px 55px,55px 55px}
+ .nav-ornament{height:28px}
+ .autor-verbete:before,.autor-verbete:after{display:none}
+}
+
+</style>
 </head>
 <body class="home-page">
     <header>
