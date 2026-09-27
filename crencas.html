@@ -241,6 +241,49 @@ footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;heig
  .lista-cards-verbetes li a:before{margin-right:9px!important;font-size:1rem}
 }
 </style>
+
+<style id="correcao-assets-imagens">
+/* Controle de proporção e resolução dos assets visuais */
+.source-figure{
+  width:fit-content;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.source-figure img{
+  display:block;
+  width:auto !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:560px !important;
+  object-fit:contain !important;
+  object-position:center;
+}
+.category-hero-image{
+  width:auto !important;
+  max-width:min(310px,78%) !important;
+  height:auto !important;
+  max-height:520px;
+  object-fit:contain !important;
+}
+.category-card-art{
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+}
+.institution-brand img{
+  width:auto !important;
+  height:auto !important;
+  max-width:min(230px,70vw) !important;
+  max-height:95px !important;
+  object-fit:contain !important;
+}
+@media(max-width:700px){
+  .source-figure img{max-height:460px !important;}
+  .category-hero-image{max-width:82% !important;max-height:460px;}
+}
+</style>
 </head>
 <body class="category-page-body">
     <header>
@@ -251,7 +294,9 @@ footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;heig
         <a href="index.html" class="voltar">← Voltar para o Menu Principal</a>
         <div class="category-intro"><img src="assets/icon_history.png" alt="Ícone de história"></div>
         <h1>Crenças</h1>
-        <div class="sem-verbetes"><span>❦</span><p>Novos verbetes em preparação.</p></div>
+        <ul class="lista-cards-verbetes">
+            <li><a href="demonologia.html">O Martelo, a Xilogravura e o Caldeirão: a receita moderna para inventar uma Bruxa</a></li>
+        </ul>
     </main>
     <footer>
         <span>Moderna I — Imaginários Modernos</span>

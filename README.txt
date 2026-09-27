@@ -1,14 +1,25 @@
+# Moderna I — Design Renascentista
 
+Site estático em HTML/CSS/JS, preparado para GitHub Pages.
 
-Novos verbetes adicionados nesta versão:
-- mulheres.html — Onde Estavam as Mulheres Modernas?
-- imprensa.html — Johannes Gutenberg e a Invenção da Imprensa
-- tempo.html — Do Juízo Final ao Futuro Aberto
+Esta versão mantém o novo modelo visual renascentista e restaura os verbetes retirados da versão anterior. Nos cards das categorias, é usado o título chamativo/apelativo de cada verbete.
 
+## Categorias
+- `corpos_costumes.html` — Corpos e Costumes
+- `crencas.html` — Crenças
+- `inovacoes.html` — Inovações
+- `cultura.html` — Cultura
 
-## Verbetes atualmente publicados
-- Entre a Festa e o Controle: Disputas e Resistências na Cultura Popular — Festas
-- Quando os Antigos Voltaram ao Palco: O Teatro no Renascimento — Teatro
-- A Revolução da Arte no Renascimento — Artes Plásticas
+## Verbetes
+- `festas.html` — Entre a Festa e o Controle: Disputas e Resistências na Cultura Popular
+- `teatro.html` — Quando os Antigos Voltaram ao Palco: O Teatro no Renascimento
+- `artes_plasticas.html` — A Revolução da Arte no Renascimento
+- `demonologia.html` — O Martelo, a Xilogravura e o Caldeirão: a receita moderna para inventar uma Bruxa
+- `prostituicao.html` — Entre o Desejo e a Moral: Os Segredos da Prostituição na Idade Moderna
+- `musica.html` — A Música Como Retrato da Modernidade
+- `moda.html` — Vestir, Exibir e Pertencer: A Moda na Idade Moderna
+- `mulheres.html` — Onde Estavam as Mulheres Modernas?
+- `imprensa.html` — Johannes Gutenberg e a Invenção da Imprensa
+- `tempo.html` — Do Juízo Final ao futuro aberto
 
-Os antigos verbetes retirados da navegação não fazem mais parte desta versão.
+A pasta `assets/` deve permanecer junto das páginas.

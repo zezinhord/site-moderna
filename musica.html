@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="pt-BR">
 <head>
@@ -185,6 +186,8 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
  .article-verbetes .atividade-intro{padding:15px 17px}
  .article-verbetes .questao{padding:18px 17px}
 }
+
+.source-figure{margin:34px auto 36px;max-width:760px;text-align:center}.source-figure img{display:block;width:auto;max-width:100%;height:auto;max-height:560px;margin:0 auto;border:2px solid var(--gold);box-shadow:0 10px 24px var(--shadow);background:#eee;object-fit:contain}.source-figure figcaption{padding:10px 14px;color:var(--ink-soft);font-style:italic;font-size:.92rem;line-height:1.45;border:1px solid var(--gold);border-top:0;background:var(--paper3)}
 </style>
 <body class="article-page-body">
 <main class="container article-verbetes">
@@ -197,4 +200,47 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 </main>
 <footer><span>Moderna I — Imaginários Modernos</span><div class="institution-brand"><img alt="Universidade Católica de Pernambuco — UNICAP" src="assets/logo_unicap_transparent.png"/></div></footer>
 </body>
-</html>
+
+<style id="correcao-assets-imagens">
+/* Controle de proporção e resolução dos assets visuais */
+.source-figure{
+  width:fit-content;
+  max-width:100%;
+  margin-left:auto;
+  margin-right:auto;
+}
+.source-figure img{
+  display:block;
+  width:auto !important;
+  height:auto !important;
+  max-width:100% !important;
+  max-height:560px !important;
+  object-fit:contain !important;
+  object-position:center;
+}
+.category-hero-image{
+  width:auto !important;
+  max-width:min(310px,78%) !important;
+  height:auto !important;
+  max-height:520px;
+  object-fit:contain !important;
+}
+.category-card-art{
+  width:100% !important;
+  height:auto !important;
+  aspect-ratio:auto !important;
+  object-fit:contain !important;
+}
+.institution-brand img{
+  width:auto !important;
+  height:auto !important;
+  max-width:min(230px,70vw) !important;
+  max-height:95px !important;
+  object-fit:contain !important;
+}
+@media(max-width:700px){
+  .source-figure img{max-height:460px !important;}
+  .category-hero-image{max-width:82% !important;max-height:460px;}
+}
+</style>
+</head></html>
