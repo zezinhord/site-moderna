@@ -31,3 +31,11 @@ Não remova a pasta `assets`, pois as páginas usam esses arquivos.
 - prostituicao.html
 - musica.html
 - moda.html
+
+
+## Verbetes atualmente publicados
+- Entre a Festa e o Controle: Disputas e Resistências na Cultura Popular — Festas
+- Quando os Antigos Voltaram ao Palco: O Teatro no Renascimento — Teatro
+- A Revolução da Arte no Renascimento — Artes Plásticas
+
+Os antigos verbetes retirados da navegação não fazem mais parte desta versão.
