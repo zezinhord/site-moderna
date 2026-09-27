@@ -23,3 +23,6 @@ Esta versão mantém o novo modelo visual renascentista e restaura os verbetes r
 - `tempo.html` — Do Juízo Final ao futuro aberto
 
 A pasta `assets/` deve permanecer junto das páginas.
+
+
+Correções de 27/09/2026: responsividade mobile, prevenção de overflow horizontal, preservação das proporções das imagens e validação da estrutura HTML (estilos pós-body movidos para o head).

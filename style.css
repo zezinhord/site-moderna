@@ -238,3 +238,36 @@ footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;heig
  .lista-cards-verbetes li a:before{margin-right:9px!important;font-size:1rem}
 }
 </style>
+
+
+/* CORREÇÕES DE RESPONSIVIDADE E ÁREA DE LEITURA — 2026-09-27 */
+*, *::before, *::after { box-sizing: border-box; }
+html { overflow-x: hidden; }
+body { overflow-x: hidden; }
+.container { width: min(980px, calc(100% - 22px)); max-width: 980px; box-sizing: border-box; }
+.article-verbetes { overflow: hidden; }
+.article-verbetes .texto-verbetes,
+.article-verbetes > p,
+.article-verbetes > h2,
+.article-verbetes .atividade-intro,
+.article-verbetes .questao,
+.article-verbetes .referencias { max-width: 100%; min-width: 0; }
+.article-verbetes p,
+.article-verbetes li { overflow-wrap: break-word; word-break: normal; }
+.source-figure { width: 100%; max-width: 760px; overflow: hidden; }
+.source-figure img { max-width: 100% !important; width: auto !important; height: auto !important; object-fit: contain !important; }
+.lista-cards-verbetes { width: 100%; box-sizing: border-box; }
+.lista-cards-verbetes li a { box-sizing: border-box; max-width: 100%; }
+@media (max-width:700px) {
+  .container { width: calc(100% - 16px); padding-left: 18px; padding-right: 18px; }
+  .article-verbetes { font-size: 16px; }
+  .article-verbetes .article-title { padding-left: 4px; padding-right: 4px; }
+  .article-verbetes .meta-info { overflow-wrap: break-word; }
+  .source-figure { width: 100%; }
+  .source-figure img { max-height: 460px !important; }
+  .lista-cards-verbetes li a { padding-left: 18px !important; padding-right: 18px !important; }
+}
+@media (max-width:430px) {
+  .container { width: calc(100% - 12px); padding-left: 14px; padding-right: 14px; }
+  .article-verbetes { font-size: 15.5px; }
+}
