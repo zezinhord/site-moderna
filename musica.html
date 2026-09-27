@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultura - Moderna I</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verbete: A Música Como Retrato da Modernidade</title>
+<style>
 :root{
   --paper:#f3e6c4;--paper2:#fbf4df;--paper3:#ead5a5;--ink:#2a2119;--ink-soft:#5a4935;
   --navy:#172b3c;--navy2:#0d1d2a;--burg:#681f2a;--burg2:#46131c;--green:#33483a;--purple:#49344f;
@@ -147,78 +148,53 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 .institution-brand img{display:block;width:auto;height:auto;max-width:230px;max-height:95px;object-fit:contain;}
 @media (max-width:700px){.institution-brand img{max-width:175px;max-height:78px;}}
 
-</style>
 
+/* AUTORIA PADRONIZADA DOS VERBETES */
+.autor-verbete{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 14px;width:min(760px,94%);margin:2px auto 24px;padding:12px 18px;text-align:center;color:var(--ink-soft);background:rgba(239,224,184,.35);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:.96rem;line-height:1.5}
+.autor-verbete .autor-label{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--burg2);font-weight:bold}
+.autor-verbete strong{color:var(--ink);font-size:1rem}
+.autor-verbete .separador{color:var(--gold);font-weight:bold}
+.autor-verbete a{color:var(--burg);font-weight:bold;text-decoration:none;border-bottom:1px solid rgba(184,136,50,.65);padding-bottom:1px}
+.autor-verbete a:hover{color:var(--navy)}
+@media(max-width:700px){.autor-verbete{width:100%;font-size:.9rem;margin-bottom:20px;padding:11px 13px;gap:4px 9px}.autor-verbete .autor-label{font-size:.72rem}}
+</style>
 <style>
-/* ORNAMENTOS ISOLADOS — NOVA COLEÇÃO RENASCENTISTA */
-body:after{content:"";position:fixed;right:10px;bottom:10px;width:92px;height:92px;background:url('assets/canto_br.png') bottom right/contain no-repeat;opacity:.78;pointer-events:none;z-index:1}
-body:before{z-index:0}
-header{position:relative;overflow:hidden}
-header:before{background:url('assets/canto_tl.png') top left/contain no-repeat!important;opacity:.9;z-index:1}
-header:after{background:url('assets/canto_tr.png') top right/contain no-repeat!important;opacity:.9;z-index:1}
-header h1,header p{position:relative;z-index:3}
-.home-page header:after{width:150px;height:150px}
-.home-page header{box-shadow:inset 0 -18px 0 rgba(184,136,50,.14)}
-.home-page header h1:after{content:"";display:block;width:min(540px,90%);height:54px;margin:14px auto -4px;background:url('assets/divisor_azul.png') center/100% 100% no-repeat;opacity:.9}
-.nav-ornament{height:54px;background-image:url('assets/moldura_horizontal.png');background-size:100% 100%;filter:drop-shadow(0 3px 2px rgba(45,25,8,.22))}
-.container{position:relative}
-.container:before{background-image:url('assets/canto_tl.png'),url('assets/canto_tr.png'),url('assets/canto_bl.png'),url('assets/canto_br.png');background-position:top left,top right,bottom left,bottom right;background-size:145px 145px,145px 145px,145px 145px,145px 145px;background-repeat:no-repeat;opacity:.78}
-.container:after{inset:0;background:url('assets/frame_overlay.png') center/100% 100% no-repeat;opacity:.18}
-.container h1{position:relative}
-.container h1:after{content:"";display:block;width:min(460px,82%);height:34px;margin:12px auto -5px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat}
-.category-page>ul li a:before{content:"";display:block;flex:0 0 30px;width:30px;height:30px;margin-right:12px;background:url('assets/flor_de_lis.png') center/contain no-repeat}
-.category-page>ul li:nth-child(2) a:before{background-image:url('assets/sol_renascentista.png')}
-.category-page>ul li:nth-child(3) a:before{background-image:url('assets/rosa_dos_ventos.png')}
-.category-page>ul li:nth-child(4) a:before{background-image:url('assets/ornamento_livro.png')}
-.autor-verbete:before{content:"";display:block;width:72px;height:28px;margin-right:4px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.85}
-.autor-verbete:after{content:"";display:block;width:72px;height:28px;margin-left:4px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.85;transform:scaleX(-1)}
-footer{position:relative;overflow:hidden}
-footer:before{background-image:url('assets/divisor_azul.png');height:34px;top:-29px;opacity:.95}
-footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;height:82px;background:url('assets/coluna_classica.png') right bottom/contain no-repeat;opacity:.38;pointer-events:none}
-.institution-brand{position:relative;z-index:3}
-.institution-brand:after{content:"";display:block;width:160px;height:42px;margin:4px auto 0;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.75}
-
+.article-verbetes{width:min(1040px,94%);padding:56px clamp(24px,6vw,76px)}
+.article-verbetes .article-title{font-size:clamp(1.75rem,4.6vw,3.05rem);line-height:1.18;margin-bottom:16px}
+.article-verbetes .meta-info{font-size:.92rem;line-height:1.5}
+.article-verbetes .lead{font-size:1.08rem}
+.article-verbetes .texto-verbetes p{margin:0 0 22px}
+.article-verbetes .texto-verbetes p:first-child:first-letter{float:left;font-size:3.25em;line-height:.72;padding:8px 9px 0 0;color:var(--burg);font-weight:bold}
+.article-verbetes .imagem-atividade{margin:36px auto 30px;text-align:center;max-width:900px}
+.article-verbetes .imagem-atividade img{display:block;width:100%;height:auto;border:2px solid var(--gold);box-shadow:0 12px 25px var(--shadow);background:#fff}
+.article-verbetes .imagem-atividade figcaption{margin:10px auto 0;max-width:820px;color:var(--ink-soft);font-size:.88rem;font-style:italic;line-height:1.45}
+.article-verbetes .atividade{margin-top:48px;padding-top:8px}
+.article-verbetes .atividade h2{text-align:center;font-size:clamp(1.45rem,4vw,2rem);padding:14px 12px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);color:var(--burg2);text-transform:uppercase}
+.article-verbetes .atividade-intro{padding:18px 22px;background:rgba(184,136,50,.08);border-left:4px solid var(--gold);margin:26px 0 34px}
+.article-verbetes .questao{margin:30px 0 34px;padding:22px 24px;background:rgba(255,255,255,.28);border:1px solid rgba(138,98,41,.45);box-shadow:0 5px 13px rgba(45,25,8,.08)}
+.article-verbetes .questao h3{margin:0 0 12px;color:var(--navy);font-size:1.08rem;letter-spacing:.05em;text-transform:uppercase}
+.article-verbetes .alternativas{list-style:none!important;padding:0!important;margin:16px 0 0!important}
+.article-verbetes .alternativas li{margin:8px 0;padding:9px 12px;border-bottom:1px solid rgba(169,130,69,.35);text-align:left!important;text-indent:0!important}
+.article-verbetes .referencias-titulo{margin-top:46px}
+.article-verbetes .referencias li{font-size:.96rem}
 @media(max-width:700px){
- body:after{width:60px;height:60px;right:4px;bottom:4px;opacity:.55}
- header:before,header:after{width:82px;height:82px}
- .home-page header:after{width:90px;height:90px}
- .home-page header h1:after{height:34px;margin-top:10px}
- .nav-ornament{height:34px}
- .container:before{background-size:76px 76px,76px 76px,76px 76px,76px 76px}
- .container h1:after{height:25px;width:86%}
- .category-page>ul li a:before{flex-basis:24px;width:24px;height:24px;margin-right:8px}
- .autor-verbete:before,.autor-verbete:after{width:42px;height:20px}
- footer:after{display:none}
- .institution-brand:after{width:120px;height:28px}
+ .article-verbetes{width:calc(100% - 16px);padding:42px 21px}
+ .article-verbetes .article-title{font-size:clamp(1.55rem,7.5vw,2.25rem)}
+ .article-verbetes .lead{font-size:1rem}
+ .article-verbetes .imagem-atividade{margin-top:28px}
+ .article-verbetes .atividade-intro{padding:15px 17px}
+ .article-verbetes .questao{padding:18px 17px}
 }
-@media(max-width:430px){
- body:after{display:none}
- header:before,header:after{width:58px;height:58px}
- .container:before{background-size:55px 55px,55px 55px,55px 55px,55px 55px}
- .nav-ornament{height:28px}
- .autor-verbete:before,.autor-verbete:after{display:none}
-}
-
 </style>
-</head>
-<body class="category-page-body">
-    <header>
-        <h1>Moderna I</h1>
-        <p>Formas de expressão artística e produção cultural no Renascimento e na Época Moderna.</p>
-    </header>
-    <main class="container category-page">
-        <a href="index.html" class="voltar">← Voltar para o Menu Principal</a>
-        <div class="category-intro"><img src="assets/icon_culture.png" alt="Ícone de cultura"></div>
-        <h1>Cultura</h1>
-        <ul>
-            <li><a href="teatro.html">Teatro Renascentista</a></li>
-            <li><a href="musica.html">Música</a></li>
-            <li><a href="artes_plasticas.html">Artes Plásticas</a></li>
-        </ul>
-    </main>
-    <footer>
-        <span>Moderna I — Imaginários Modernos</span>
-        <div class="institution-brand"><img src="assets/logo_unicap_transparent.png" alt="Universidade Católica de Pernambuco — UNICAP"></div>
-    </footer>
+<body class="article-page-body">
+<main class="container article-verbetes">
+<div class="nav-ornament"></div>
+<a class="voltar" href="cultura.html">← Voltar para Cultura</a>
+<div class="autor-verbete"><span class="autor-label">Autor do verbete</span><strong>Noberto Farias</strong><span class="separador">·</span><a href="https://lattes.cnpq.br/8439275864817970" rel="noopener" target="_blank">Currículo Lattes</a></div>
+<h1 class="article-title">A Música Como Retrato da Modernidade</h1>
+<div class="meta-info">Verbete: Música na Idade Moderna · Categoria: Cultura · Renascimento e Barroco</div>
+<h2>Resumo</h2><p>A música na Idade Moderna não pode ser separada do tempo em que foi criada: ela revela transformações culturais, artísticas e até concepções sobre o universo. Do Renascimento ao Barroco, suas formas e ideias acompanharam diferentes maneiras de compreender a arte, a sociedade e o próprio fazer musical.</p><h2>Texto</h2><article class="texto-verbetes"><p class="lead">Como toda arte, a música é produzida por sujeitos que estão presos a um período histórico que vai ser marcado pelas problemáticas daquele período, a música não pode ser compreendida por completo se estiver fora do seu período e, por conta disso, ela torna também uma ferramenta de análise histórica, pois ela acaba servindo como um espelho do tempo e transformações vividas. Se partimos dessa lógica de que a música pode ser compreendida como um espelho, é possível pensar que existem paralelos a serem traçados entre a música e movimentos artísticos da época, como o Renascimento e o Barroco. Porém, é importante perceber que esses paralelos não podem ser absolutos, visto que a arte deve ser entendida com conceitos intuitivos e subjetivos, que não podem ser reduzidos completamente a conceitos. Curiosamente, até as categorias usadas para definir essas ideias são conceitos históricos e não absolutos.</p><p>Na arte Renascentista, há um forte caráter linear em suas figuras, elas são claramente delimitadas e são também extremamente perceptíveis e destacadas, a composição favorece as suas linhas, com planos estáveis e paralelos, definidos, inclusive com elementos compondo uma certa unidade. Na música, é perceptível a presença destes elementos em formas, com diversas seções, mas também com diversos retornos a uma unidade já apresentada ao ouvinte, como se houvessem seções onde novos elementos são apresentados, acrescentando variedade a peça, mas mantendo uma seção constante. São múltiplas ideias que se organizam em um todo, também claramente definidas, destacadas.</p><p>Pensando em termos mais contemporâneos, é possível facilitar o entendimento dessa questão das seções com a ideia de verso e refrão. Imagine que uma música possui apenas um refrão, que vai se manter sem alterações ao longo de toda a duração da música, e diversos versos que vão criar uma narrativa para aquela canção. A música poderia iniciar com um verso que conta uma parte da história, e então o refrão, e mais um verso que seria diferente do primeiro, continuando aquela mesma história ou até mesmo trazendo um outro ponto alheio ao que foi apresentado, e então aquele mesmo refrão mais uma vez, e outro verso diferente que voltaria ao mesmo refrão... Note, há uma riqueza de elementos, mas há também uma seção única, um elemento único, que liga toda a peça.</p><p>Já olhando para o Barroco, temos um movimento oposto, as figuras presentes se integram, os elementos visuais são mais entrelaçados, com contornos menos definidos, passando a formar uma unidade mais intensa. Há também uma maior sensação de movimento e profundidade, com artistas explorando o dentro e o fora da composição, além de trabalhar com figuras que vão além da moldura, além do espaço representado. Na música barroca, como é de se esperar, estas ideias e padrões se manifestam dentro do possível, com composições explorando a mesma ideia musical através de desenvolvimentos, expansões. Diferente da música Renascentista, onde haviam seções estáticas que permaneciam ao longo da música, na música barroca essa ideia é modificada ao ponto de se tornar algo novo, ainda que mantendo a sensação de familiaridade.</p><p>Para facilitar o entendimento, podemos pensar em uma melodia, uma sequência melódica de notas que vai servir como a ideia principal de uma música. Para tentar se aproximar do Barroco, essa melodia deve ser tocada e então desenvolvida, isto é, cria-se uma melodia em cima daquela primeira que se relaciona diretamente com ela, ela pode ser também invertida, que é a substituição de um intervalo melódico por outro de igual valor mas em direção oposta, essa mesma melodia também pode ser modificada e transportada a outras tonalidades, e aqui cabe dizer que foi no movimento barroco onde se consolidou o sistema tonal e o uso de acordes dominantes para a criação de tensão e direcionamento de resolução na tônica (acorde ou nota que dá nome a escala tocada).</p><p>Ainda na relação passado-presente, é neste momento da música, junto da harmonia tonal, que temos um maior aproveitamento de dois modos, o jônio e o eólio, até hoje entendidos como “maior” e “menor”, respectivamente, amplamente utilizados. Houve também um surgimento de mais instrumentos, desenvolvimento de novas técnicas musicais, o contraponto (movimento de duas ou mais melodias independentes tocadas ao mesmo tempo) se fez muito presente e é o movimento em que Johann Sebastian Bach se faz presente como um dos grandes nomes.</p><p>Importante também perceber que música como entendemos hoje em dia não é a mesma que entendiam os modernos, o entendimento do que era música e do fazer musical é muito particular de cada época, e no meio do renascimento, onde houve um resgate de uma antiguidade clássica, não é surpreende imaginar que a música pudesse passar por transformações que se aproximavam aos ideais da época, conceitos musicais como consonância (notas tocadas que se tornam agradáveis ao ouvido) e dissonância (o oposto, notas tocadas que soam desagradáveis ao ouvido), passam a ser entendidos de forma mais matemática, ainda que não reduzida totalmente a esta visão. Por exemplo, ainda que na busca pela perfeição matemática se torne intuitivo o uso principalmente de intervalos harmônicos consonantes, também cabia ao bom músico da época entender onde inserir os intervalos dissonantes para o enriquecimento da peça, ideia que está muito mais ligada a uma prática intuitiva musical do que puramente matemática e fechada em regras.</p><p>A música na época pode ser entendida como uma união de harmonia, ritmo e oração, o que afasta ainda mais a prática musical das regras matemáticas, conceito que parece estar muito mais restrito a um conceito teórico, que se mesclava a prática musical e que coexistia com a mesma.</p><p>A influência clássica também está presente na ideia que os astros e as coisas produziam sons em razão dos seu próprio movimento, e as relações destes movimentos poderiam ser entendidos como intervalos musicais, assim como a distância entre os astros, a cosmologia poderia ser descrita através de conceitos harmônicos, fazendo com que a musica fosse entendida como uma imitação ou reprodução da ordem cósmica, onde tudo possui seu lugar e serve um proposito.</p><p>A análise evidencia que a música está intimamente relacionada ao contexto histórico em que é criada. No Renascimento, temos um maior destaque na organização marcada pelas seções e manutenção de uma unidade, enquanto o Barroco evidencia o desenvolvimento e transformação das ideias musicais, acompanhando características observadas nas artes visuais de ambos os movimentos, dentro do cabível. Além de que a modernidade foi um período com diversas mudanças na compreensão e prática musical, com a consolidação da harmonia tonal (muito usada até hoje), o uso da tensão e resolução (motor que possibilita diversas expressões musicais do hoje, como o jazz, bossa nova, blues...), o desenvolvimento e aperfeiçoamento do contraponto. Ao mesmo tempo que a ideia de música se relaciona a concepções matemáticas e cosmológicas, mostrando que ela ia muito além de regras teóricas matemáticas ou mera prática musical intuitiva, misturando esses lados antagônicos e permitindo a percepção e estudo de ambos individualmente.</p></article><figure class="source-figure"><img alt="Os Músicos, de Caravaggio, 1597" src="https://collectionapi.metmuseum.org/api/collection/v1/iiif/435844/1581937/main-image"/><figcaption><em>Os Músicos (The Musicians)</em>, Caravaggio, 1597. Óleo sobre tela. Metropolitan Museum of Art.</figcaption></figure><h2>Atividade Pedagógica</h2><p>Diante do que foi apresentado no texto referente ao Barroco, como a pintura Os músicos, obra de Caravaggio, pode ajudar a entender a relação entre a música e as artes visuais no Barroco? O que podemos perceber sobre o fazer musical no período que não aparece de forma óbvia quando pensamos na música apenas como a organização de sons? Como ela pode ajudar a entender a música como algo inserido em determinado tempo histórico?</p><h2>Referências Bibliográficas</h2><ul class="referencias"><li>CHEDIAK, Almir. Harmonia e improvisação. Rio de Janeiro: Lumiar Editora, 1986.</li><li>CARAVAGGIO. Os músicos [The Musicians]. 1597. Pintura, óleo sobre tela. Metropolitan Museum of Art, Nova York.</li><li>BARROS, José D’Assunção. História, Artes Visuais e Música: imagens de uma relação interativa, através de uma análise dos estilos Barroco e do Renascentista. Esboços: histórias em contextos globais, Florianópolis, v. 15, n. 19, p. 27–55, 2008. DOI: 10.5007/2175-7976.2008v15n19p27. Disponível em: https://periodicos.ufsc.br/index.php/esbocos/article/view/2175-7976.2008v15n19p27. Acesso em: 14 set. 2026.</li><li>PORTO, Delphim Rezende. Os limites da música no Renascimento segundo a preceptiva de Gioseffo Zarlino (1517-1590). Revista Música, São Paulo, v. 18, n. especial, p. 49–68, 2018. DOI: 10.11606/rm.v18iespecial.151028. Disponível em: https://revistas.usp.br/revistamusica/article/view/151028. Acesso em: 14 set. 2026.</li></ul>
+</main>
+<footer><span>Moderna I — Imaginários Modernos</span><div class="institution-brand"><img alt="Universidade Católica de Pernambuco — UNICAP" src="assets/logo_unicap_transparent.png"/></div></footer>
 </body>
 </html>

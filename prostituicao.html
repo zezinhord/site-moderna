@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultura - Moderna I</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verbete: Prostituição na Idade Moderna: Sexualidade, Sociedade, Poder e Cultura</title>
+<style>
 :root{
   --paper:#f3e6c4;--paper2:#fbf4df;--paper3:#ead5a5;--ink:#2a2119;--ink-soft:#5a4935;
   --navy:#172b3c;--navy2:#0d1d2a;--burg:#681f2a;--burg2:#46131c;--green:#33483a;--purple:#49344f;
@@ -147,78 +148,53 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 .institution-brand img{display:block;width:auto;height:auto;max-width:230px;max-height:95px;object-fit:contain;}
 @media (max-width:700px){.institution-brand img{max-width:175px;max-height:78px;}}
 
-</style>
 
+/* AUTORIA PADRONIZADA DOS VERBETES */
+.autor-verbete{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 14px;width:min(760px,94%);margin:2px auto 24px;padding:12px 18px;text-align:center;color:var(--ink-soft);background:rgba(239,224,184,.35);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:.96rem;line-height:1.5}
+.autor-verbete .autor-label{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--burg2);font-weight:bold}
+.autor-verbete strong{color:var(--ink);font-size:1rem}
+.autor-verbete .separador{color:var(--gold);font-weight:bold}
+.autor-verbete a{color:var(--burg);font-weight:bold;text-decoration:none;border-bottom:1px solid rgba(184,136,50,.65);padding-bottom:1px}
+.autor-verbete a:hover{color:var(--navy)}
+@media(max-width:700px){.autor-verbete{width:100%;font-size:.9rem;margin-bottom:20px;padding:11px 13px;gap:4px 9px}.autor-verbete .autor-label{font-size:.72rem}}
+</style>
 <style>
-/* ORNAMENTOS ISOLADOS — NOVA COLEÇÃO RENASCENTISTA */
-body:after{content:"";position:fixed;right:10px;bottom:10px;width:92px;height:92px;background:url('assets/canto_br.png') bottom right/contain no-repeat;opacity:.78;pointer-events:none;z-index:1}
-body:before{z-index:0}
-header{position:relative;overflow:hidden}
-header:before{background:url('assets/canto_tl.png') top left/contain no-repeat!important;opacity:.9;z-index:1}
-header:after{background:url('assets/canto_tr.png') top right/contain no-repeat!important;opacity:.9;z-index:1}
-header h1,header p{position:relative;z-index:3}
-.home-page header:after{width:150px;height:150px}
-.home-page header{box-shadow:inset 0 -18px 0 rgba(184,136,50,.14)}
-.home-page header h1:after{content:"";display:block;width:min(540px,90%);height:54px;margin:14px auto -4px;background:url('assets/divisor_azul.png') center/100% 100% no-repeat;opacity:.9}
-.nav-ornament{height:54px;background-image:url('assets/moldura_horizontal.png');background-size:100% 100%;filter:drop-shadow(0 3px 2px rgba(45,25,8,.22))}
-.container{position:relative}
-.container:before{background-image:url('assets/canto_tl.png'),url('assets/canto_tr.png'),url('assets/canto_bl.png'),url('assets/canto_br.png');background-position:top left,top right,bottom left,bottom right;background-size:145px 145px,145px 145px,145px 145px,145px 145px;background-repeat:no-repeat;opacity:.78}
-.container:after{inset:0;background:url('assets/frame_overlay.png') center/100% 100% no-repeat;opacity:.18}
-.container h1{position:relative}
-.container h1:after{content:"";display:block;width:min(460px,82%);height:34px;margin:12px auto -5px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat}
-.category-page>ul li a:before{content:"";display:block;flex:0 0 30px;width:30px;height:30px;margin-right:12px;background:url('assets/flor_de_lis.png') center/contain no-repeat}
-.category-page>ul li:nth-child(2) a:before{background-image:url('assets/sol_renascentista.png')}
-.category-page>ul li:nth-child(3) a:before{background-image:url('assets/rosa_dos_ventos.png')}
-.category-page>ul li:nth-child(4) a:before{background-image:url('assets/ornamento_livro.png')}
-.autor-verbete:before{content:"";display:block;width:72px;height:28px;margin-right:4px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.85}
-.autor-verbete:after{content:"";display:block;width:72px;height:28px;margin-left:4px;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.85;transform:scaleX(-1)}
-footer{position:relative;overflow:hidden}
-footer:before{background-image:url('assets/divisor_azul.png');height:34px;top:-29px;opacity:.95}
-footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;height:82px;background:url('assets/coluna_classica.png') right bottom/contain no-repeat;opacity:.38;pointer-events:none}
-.institution-brand{position:relative;z-index:3}
-.institution-brand:after{content:"";display:block;width:160px;height:42px;margin:4px auto 0;background:url('assets/divisor_fino.png') center/100% 100% no-repeat;opacity:.75}
-
+.article-verbetes{width:min(1040px,94%);padding:56px clamp(24px,6vw,76px)}
+.article-verbetes .article-title{font-size:clamp(1.75rem,4.6vw,3.05rem);line-height:1.18;margin-bottom:16px}
+.article-verbetes .meta-info{font-size:.92rem;line-height:1.5}
+.article-verbetes .lead{font-size:1.08rem}
+.article-verbetes .texto-verbetes p{margin:0 0 22px}
+.article-verbetes .texto-verbetes p:first-child:first-letter{float:left;font-size:3.25em;line-height:.72;padding:8px 9px 0 0;color:var(--burg);font-weight:bold}
+.article-verbetes .imagem-atividade{margin:36px auto 30px;text-align:center;max-width:900px}
+.article-verbetes .imagem-atividade img{display:block;width:100%;height:auto;border:2px solid var(--gold);box-shadow:0 12px 25px var(--shadow);background:#fff}
+.article-verbetes .imagem-atividade figcaption{margin:10px auto 0;max-width:820px;color:var(--ink-soft);font-size:.88rem;font-style:italic;line-height:1.45}
+.article-verbetes .atividade{margin-top:48px;padding-top:8px}
+.article-verbetes .atividade h2{text-align:center;font-size:clamp(1.45rem,4vw,2rem);padding:14px 12px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);color:var(--burg2);text-transform:uppercase}
+.article-verbetes .atividade-intro{padding:18px 22px;background:rgba(184,136,50,.08);border-left:4px solid var(--gold);margin:26px 0 34px}
+.article-verbetes .questao{margin:30px 0 34px;padding:22px 24px;background:rgba(255,255,255,.28);border:1px solid rgba(138,98,41,.45);box-shadow:0 5px 13px rgba(45,25,8,.08)}
+.article-verbetes .questao h3{margin:0 0 12px;color:var(--navy);font-size:1.08rem;letter-spacing:.05em;text-transform:uppercase}
+.article-verbetes .alternativas{list-style:none!important;padding:0!important;margin:16px 0 0!important}
+.article-verbetes .alternativas li{margin:8px 0;padding:9px 12px;border-bottom:1px solid rgba(169,130,69,.35);text-align:left!important;text-indent:0!important}
+.article-verbetes .referencias-titulo{margin-top:46px}
+.article-verbetes .referencias li{font-size:.96rem}
 @media(max-width:700px){
- body:after{width:60px;height:60px;right:4px;bottom:4px;opacity:.55}
- header:before,header:after{width:82px;height:82px}
- .home-page header:after{width:90px;height:90px}
- .home-page header h1:after{height:34px;margin-top:10px}
- .nav-ornament{height:34px}
- .container:before{background-size:76px 76px,76px 76px,76px 76px,76px 76px}
- .container h1:after{height:25px;width:86%}
- .category-page>ul li a:before{flex-basis:24px;width:24px;height:24px;margin-right:8px}
- .autor-verbete:before,.autor-verbete:after{width:42px;height:20px}
- footer:after{display:none}
- .institution-brand:after{width:120px;height:28px}
+ .article-verbetes{width:calc(100% - 16px);padding:42px 21px}
+ .article-verbetes .article-title{font-size:clamp(1.55rem,7.5vw,2.25rem)}
+ .article-verbetes .lead{font-size:1rem}
+ .article-verbetes .imagem-atividade{margin-top:28px}
+ .article-verbetes .atividade-intro{padding:15px 17px}
+ .article-verbetes .questao{padding:18px 17px}
 }
-@media(max-width:430px){
- body:after{display:none}
- header:before,header:after{width:58px;height:58px}
- .container:before{background-size:55px 55px,55px 55px,55px 55px,55px 55px}
- .nav-ornament{height:28px}
- .autor-verbete:before,.autor-verbete:after{display:none}
-}
-
 </style>
-</head>
-<body class="category-page-body">
-    <header>
-        <h1>Moderna I</h1>
-        <p>Formas de expressão artística e produção cultural no Renascimento e na Época Moderna.</p>
-    </header>
-    <main class="container category-page">
-        <a href="index.html" class="voltar">← Voltar para o Menu Principal</a>
-        <div class="category-intro"><img src="assets/icon_culture.png" alt="Ícone de cultura"></div>
-        <h1>Cultura</h1>
-        <ul>
-            <li><a href="teatro.html">Teatro Renascentista</a></li>
-            <li><a href="musica.html">Música</a></li>
-            <li><a href="artes_plasticas.html">Artes Plásticas</a></li>
-        </ul>
-    </main>
-    <footer>
-        <span>Moderna I — Imaginários Modernos</span>
-        <div class="institution-brand"><img src="assets/logo_unicap_transparent.png" alt="Universidade Católica de Pernambuco — UNICAP"></div>
-    </footer>
+<body class="article-page-body">
+<main class="container article-verbetes">
+<div class="nav-ornament"></div>
+<a class="voltar" href="corpos_costumes.html">← Voltar para Corpos e Costumes</a>
+<div class="autor-verbete"><span class="autor-label">Autor do verbete</span><strong>Luisa</strong><span class="separador">·</span><a href="http://lattes.cnpq.br/6480406653443012" rel="noopener" target="_blank">Currículo Lattes</a></div>
+<h1 class="article-title">Prostituição na Idade Moderna: Sexualidade, Sociedade, Poder e Cultura</h1>
+<div class="meta-info">Verbete: Prostituição na Idade Moderna · Categoria: Corpos e Costumes · Sexualidade, sociedade, poder e cultura</div>
+<h2>Resumo</h2><p>A prostituição na Idade Moderna assumiu formas distintas de acordo com o lugar e o período: em algumas cidades foi tolerada ou até mesmo regulamentada; em outras, foi perseguida e deslocada. Longe de ser uma prática isolada, relacionava-se à vida urbana, à pobreza, ao trabalho feminino, ao casamento, à religião, às relações de gênero, à circulação de pessoas e às tentativas de controle por parte das autoridades.</p><h2>Texto</h2><article class="texto-verbetes"></article><figure class="source-figure"><img alt="Portrait of a Lady, atribuído a Jacopo Tintoretto ou a um seguidor" src="assets/prostituicao_img-000.jpg"/><figcaption><em>Portrait of a Lady</em>, frequentemente atribuído a Jacopo Tintoretto ou a um de seus seguidores, c. 1574, conforme identificado no material fornecido.</figcaption></figure><figure class="source-figure"><img alt="Retrato de Gerard de Lairesse, pintado por Rembrandt" src="assets/prostituicao_img-001.jpg"/><figcaption>Retrato de Gerard de Lairesse, por Rembrandt, por volta de 1660. O material relaciona a obra à discussão sobre a sífilis.</figcaption></figure><h2>Atividade Pedagógica</h2><p>A prostituição na Idade Moderna fazia parte do cotidiano de diferentes cidades e estava relacionada a questões como trabalho, economia, sexualidade, religião, relações de gênero e controle social. Embora fosse muitas vezes condenada moralmente, também podia ser tolerada ou regulamentada pelas autoridades.</p><p>Se a prostituição era condenada pela sociedade, por que continuava presente nas cidades da Idade Moderna? O que essa contradição revela sobre os valores, as relações de poder e as diferenças entre homens e mulheres naquele período?</p><p>Orientação: Escreva uma resposta de aproximadamente 8 a 15 linhas, utilizando exemplos apresentados no texto estudado para fundamentar sua reflexão.</p><h2>Referências Bibliográficas</h2><ul class="referencias"><li>CLARKE, Paula C. The business of prostitution in early Renaissance Venice. Renaissance Quarterly, v. 68, n. 2, p. 419-464, 2015. DOI: 10.1086/682434.</li><li>COHEN, Elizabeth S. Seen and known: prostitutes in the cityscape of late-sixteenth-century Rome. Renaissance Studies, v. 12, n. 3, p. 392-409, 1998. DOI: 10.1111/j.1477-4658.1998.tb00417.x.</li><li>EDER, Franz X. Sexuality in premodern Europe: a social and cultural history from antiquity to the early modern age. London: Bloomsbury Academic, 2023.</li><li>MCGOUGH, Laura J. Gender, sexuality, and syphilis in early modern Venice: the disease that came to stay. London: Palgrave Macmillan, 2010.</li><li>STOREY, Tessa. Fragments from the ‘life histories’ of jewellery belonging to prostitutes in early-modern Rome. Renaissance Studies, v. 19, n. 5, p. 647-657, 2005. DOI: 10.1111/j.1477-4658.2005.00128.x.</li></ul>
+</main>
+<footer><span>Moderna I — Imaginários Modernos</span><div class="institution-brand"><img alt="Universidade Católica de Pernambuco — UNICAP" src="assets/logo_unicap_transparent.png"/></div></footer>
 </body>
 </html>

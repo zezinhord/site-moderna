@@ -24,3 +24,10 @@ Não remova a pasta `assets`, pois as páginas usam esses arquivos.
 - `artes_plasticas.html` — A Revolução da Arte no Renascimento.
 - `assets/teatro_titus_andronicus.jpg` — imagem do verbete de Teatro.
 - `assets/artes_ultima_ceia.jpg` — imagem do verbete de Artes Plásticas.
+
+
+## Verbetes adicionados
+- demonologia.html
+- prostituicao.html
+- musica.html
+- moda.html

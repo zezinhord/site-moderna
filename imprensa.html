@@ -1,10 +1,11 @@
 <!DOCTYPE html>
+
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cultura - Moderna I</title>
-    <style>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Verbete: Johannes Gutenberg e a Invenção da Imprensa</title>
+<style>
 :root{
   --paper:#f3e6c4;--paper2:#fbf4df;--paper3:#ead5a5;--ink:#2a2119;--ink-soft:#5a4935;
   --navy:#172b3c;--navy2:#0d1d2a;--burg:#681f2a;--burg2:#46131c;--green:#33483a;--purple:#49344f;
@@ -147,7 +148,78 @@ footer{background:linear-gradient(180deg,#11283a,#081925);border-top:4px solid v
 .institution-brand img{display:block;width:auto;height:auto;max-width:230px;max-height:95px;object-fit:contain;}
 @media (max-width:700px){.institution-brand img{max-width:175px;max-height:78px;}}
 
+
+/* AUTORIA PADRONIZADA DOS VERBETES */
+.autor-verbete{display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 14px;width:min(760px,94%);margin:2px auto 24px;padding:12px 18px;text-align:center;color:var(--ink-soft);background:rgba(239,224,184,.35);border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);font-size:.96rem;line-height:1.5}
+.autor-verbete .autor-label{text-transform:uppercase;letter-spacing:.08em;font-size:.78rem;color:var(--burg2);font-weight:bold}
+.autor-verbete strong{color:var(--ink);font-size:1rem}
+.autor-verbete .separador{color:var(--gold);font-weight:bold}
+.autor-verbete a{color:var(--burg);font-weight:bold;text-decoration:none;border-bottom:1px solid rgba(184,136,50,.65);padding-bottom:1px}
+.autor-verbete a:hover{color:var(--navy)}
+@media(max-width:700px){.autor-verbete{width:100%;font-size:.9rem;margin-bottom:20px;padding:11px 13px;gap:4px 9px}.autor-verbete .autor-label{font-size:.72rem}}
 </style>
+<style>
+.article-verbetes{width:min(1040px,94%);padding:56px clamp(24px,6vw,76px)}
+.article-verbetes .article-title{font-size:clamp(1.75rem,4.6vw,3.05rem);line-height:1.18;margin-bottom:16px}
+.article-verbetes .meta-info{font-size:.92rem;line-height:1.5}
+.article-verbetes .lead{font-size:1.08rem}
+.article-verbetes .texto-verbetes p{margin:0 0 22px}
+.article-verbetes .texto-verbetes p:first-child:first-letter{float:left;font-size:3.25em;line-height:.72;padding:8px 9px 0 0;color:var(--burg);font-weight:bold}
+.article-verbetes .imagem-atividade{margin:36px auto 30px;text-align:center;max-width:900px}
+.article-verbetes .imagem-atividade img{display:block;width:100%;height:auto;border:2px solid var(--gold);box-shadow:0 12px 25px var(--shadow);background:#fff}
+.article-verbetes .imagem-atividade figcaption{margin:10px auto 0;max-width:820px;color:var(--ink-soft);font-size:.88rem;font-style:italic;line-height:1.45}
+.article-verbetes .atividade{margin-top:48px;padding-top:8px}
+.article-verbetes .atividade h2{text-align:center;font-size:clamp(1.45rem,4vw,2rem);padding:14px 12px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);color:var(--burg2);text-transform:uppercase}
+.article-verbetes .atividade-intro{padding:18px 22px;background:rgba(184,136,50,.08);border-left:4px solid var(--gold);margin:26px 0 34px}
+.article-verbetes .questao{margin:30px 0 34px;padding:22px 24px;background:rgba(255,255,255,.28);border:1px solid rgba(138,98,41,.45);box-shadow:0 5px 13px rgba(45,25,8,.08)}
+.article-verbetes .questao h3{margin:0 0 12px;color:var(--navy);font-size:1.08rem;letter-spacing:.05em;text-transform:uppercase}
+.article-verbetes .alternativas{list-style:none!important;padding:0!important;margin:16px 0 0!important}
+.article-verbetes .alternativas li{margin:8px 0;padding:9px 12px;border-bottom:1px solid rgba(169,130,69,.35);text-align:left!important;text-indent:0!important}
+.article-verbetes .referencias-titulo{margin-top:46px}
+.article-verbetes .referencias li{font-size:.96rem}
+@media(max-width:700px){
+ .article-verbetes{width:calc(100% - 16px);padding:42px 21px}
+ .article-verbetes .article-title{font-size:clamp(1.55rem,7.5vw,2.25rem)}
+ .article-verbetes .lead{font-size:1rem}
+ .article-verbetes .imagem-atividade{margin-top:28px}
+ .article-verbetes .atividade-intro{padding:15px 17px}
+ .article-verbetes .questao{padding:18px 17px}
+}
+</style>
+<body class="article-page-body">
+<main class="container article-verbetes">
+<div class="nav-ornament"></div>
+<a class="voltar" href="inovacoes.html">← Voltar para Inovações</a>
+<div class="autor-verbete"><span class="autor-label">Autor do verbete</span><strong>Eduardo José Pereira da Silva</strong></div>
+<h1 class="article-title">Johannes Gutenberg e a Invenção da Imprensa</h1>
+<div class="meta-info"><strong>Verbete: Johannes Gutenberg e a Invenção da Imprensa</strong> · Categoria: Inovações · Idade Moderna</div>
+<h2>Resumo</h2><p>A imprensa é uma ferramenta poderosa na divulgação em grande escala das notícias, obras literárias, religião e pensamento. De acordo com a Enciclopédia Barsa já havia experiencias de textos impressos na Alemanha e nos Países Baixos pelo processo de xilogravura, assim como na China e na Coreia desde a Antiguidade. Era um processo manual e de pequenas tiragens. O grande do alemão Johannes Gutenberg é inovar com a tipografia, que consistia em tipos móveis feitos de metal, por meio de punções, matrizes e moldes, levando à produção de impressões em escala maior, melhor qualidade e homogeneidade no resultado. Nada obstante, há uma referência ao chinês Bi Sheng, que teria sido o primeiro a usar tipos móveis no ano de 1.040, o que faria dele, e não Gutenberg, a ser o primeiro a usar essa técnica.</p>
+<h2>Texto</h2><article class="texto-verbetes">
+<p class="lead">Ao concluir a Bíblia, Gutenberg não pagou a dívida com Johann Fust e foi processado judicialmente tendo perdido a causa e entregado como dação em pagamento os equipamentos de impressão ao seu antigo credor. Continuando em sua vocação, recebeu ajuda financeira de Konrad Humery, conselheiro municipal de Mainz, tendo imprimido a gramática latina de Hélio Donato, assim como um vocabulário e outros livros.</p>
+<p>As impressões em larga escala não existiam e foi com o advento do engenho de Gutenberg que começaram a ser substituídas as formas rudimentares feitas à mão e as impressões em blocos de madeira. O modo de fazer livros foi aperfeiçoado e espalhou-se mundo afora. Além da técnica em si, os materiais também: a liga para os metais usados para a confecção dos tipos (chumbo, estanho e antimônio), a tinta à base de óleo e anova prensa adaptada de uma que se usava para a produção de vinho.</p>
+<p>Não é sem razão que a invenção da máquina impressora, juntamente com a invenção da pólvora (também atribuída aos alemães) e da bússola, está vinculada ao progresso do conhecimento. Mas, como alerta Peter Burke, este advento trouxe consigo alguns efeitos colaterais não imaginados. A Bíblia de Gutenberg foi o marco inicial, porém com a popularização da impressão de livros, surgiram “narrativas catastróficas” como é natural sempre que uma inovação revoluciona a forma de viver e a zona de conforto do status quo das pessoas. Por exemplo, os copistas e os papeleiros que vendiam livros manuscritos, assim como os contadores de histórias viram seu meio de vida ameaçados. Os eclesiásticos por sua vez temiam que tal popularização desse acesso aos textos bíblicos e religiosos, o que faria com que pessoas comuns passassem a interpretar as Escrituras em vez que acatar a doutrinação dos exegetas. O Concílio de Trento (Itália, entre 1545 – 1563) elaborou uma lista de livros proibidos para evitar que leigos pudessem questionar os dogmas impostos pela Igreja. já os protestantes tomaram caminho oposto, estimulando a alfabetização da população pobre para que pudessem ler a Bíblia. Obviamente, muitos aprendiam a ler nas escolas de alfabetização e depois não ficavam apenas na leitura do texto sagrado. Outro aspecto da novel sociedade com a popularização dos livros, fruto da invenção da imprensa, foi o acesso a informações políticas divulgadas em panfletos e jornais produzidos em larga escala. Nas barbearias os homens começavam agora a debater as medidas do governo, arrazoando se estavam certas ou erradas e criticando-as muitas vezes, dando ocasião a críticas. Na mesma lógica da Igreja, o governo se via em dificuldades por não ter argumentos para rebater as medidas questionadas. Chegou-se a aventar a premissa de que “a invenção da tipografia trouxera mais malefícios do que vantagens para o mundo cristão”.</p>
+<p>Se na Idade Média o problema era a falta de livros, com a invenção da imprensa, o problema passou ser a enorme quantidade deles. Tantos que se chegou a comparar com uma floresta em que leitor chegara a se perder ou a um oceano onde os leitores teriam que navegar. Mal comparando a explosão de livros e informações levou a um abalo na sociedade da época, comparável ao fenômeno das informações instantâneas das atuais redes sociais.</p>
+<p>Outra novidade que foi se aperfeiçoando com a invenção de Gutenberg, em decorrência da produtividade de obras em escala industrial, foi a necessidade da proteção jurídica dos direitos autorais porque se precisaria de um regramento de quem teria o direito de reproduzir ou utilizar as obras escritas, vez que os autores precisariam ser remunerados.</p>
+<p>Gutenberg figura como o grande precursor da imprensa moderna e os reflexos de sua invenção (ou aperfeiçoamento do que já fora desenvolvido antes dele) são sentidos no século seguinte, especialmente quando da Reforma Protestante, capitaneada por Martinho Lutero em 1517. Os panfletos luteranos passaram a ser rodados em máquinas que eram réplicas do modelo de Gutenberg, patrocinadas pelos simpáticos à Reforma e ampliaram consideravelmente a nova forma do Cristianismo perceber o exercício da fé.</p>
+<p>Mesmo com a velocidade e facilidade dos atuais livros digitais e a consequente diminuição das livrarias físicas, os livros de papel ainda desfrutam de prestígio nos leitores e a invenção de Gutenberg se constitui uma verdadeira revolução na evolução do conhecimento humano.</p>
+<p>Atividade: Cite e comente três inovações que a invenção da imprensa trouxe e que perduram até os dias atuais.</p>
+<p>Bibliografia</p>
+<p>Grande Enciclopédia Barsa, 3ª edição. São Paulo: Barsa Planeta Internacional, 2004. Vol. 7, p 291.</p>
+</article>
+<figure class="source-figure"><img src="assets/gutenberg.jpeg" alt="A Bíblia de Gutenberg, considerada a primeira obra a ser produzida com tipos móveis; ainda restam exemplares no mundo, um deles no Brasil."/><figcaption>A Bíblia de Gutenberg, considerada a primeira obra a ser produzida com tipos móveis; ainda restam exemplares no mundo, um deles no Brasil.</figcaption></figure>
+<h2>Atividade</h2><p>https://pt.wikipedia.org/wiki/Johannes_Gutenberg</p>
+<h2>Referências Bibliográficas</h2><div class="referencias">
+<p>Produzida com tipos móveis. Ainda restam 46 exemplares</p>
+<p>No mundo e um deles está no Brasil</p>
+<p>Site da imagem: https://pt.wikipedia.org/wiki/Ficheiro:Gutenberg_bible_Old_Testament_Epistle_of_St_Jerome.jpg</p>
+</div>
+</main>
+
+<footer>
+<span>Moderna I — Imaginários Modernos</span>
+<div class="institution-brand"><img alt="Universidade Católica de Pernambuco — UNICAP" src="assets/logo_unicap_transparent.png"/></div>
+</footer>
+</body>
 
 <style>
 /* ORNAMENTOS ISOLADOS — NOVA COLEÇÃO RENASCENTISTA */
@@ -200,25 +272,4 @@ footer:after{content:"";position:absolute;right:24px;bottom:12px;width:82px;heig
 }
 
 </style>
-</head>
-<body class="category-page-body">
-    <header>
-        <h1>Moderna I</h1>
-        <p>Formas de expressão artística e produção cultural no Renascimento e na Época Moderna.</p>
-    </header>
-    <main class="container category-page">
-        <a href="index.html" class="voltar">← Voltar para o Menu Principal</a>
-        <div class="category-intro"><img src="assets/icon_culture.png" alt="Ícone de cultura"></div>
-        <h1>Cultura</h1>
-        <ul>
-            <li><a href="teatro.html">Teatro Renascentista</a></li>
-            <li><a href="musica.html">Música</a></li>
-            <li><a href="artes_plasticas.html">Artes Plásticas</a></li>
-        </ul>
-    </main>
-    <footer>
-        <span>Moderna I — Imaginários Modernos</span>
-        <div class="institution-brand"><img src="assets/logo_unicap_transparent.png" alt="Universidade Católica de Pernambuco — UNICAP"></div>
-    </footer>
-</body>
-</html>
+</head></html>
