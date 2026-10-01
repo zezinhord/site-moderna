@@ -997,3 +997,42 @@ header h1{max-width:100%;overflow-wrap:anywhere}
   .categoria-card strong{font-size:1.2rem}
   .lista-cards-verbetes li a{font-size:.92rem;padding-left:13px!important;padding-right:13px!important}
 }
+/* =========================================================
+   PADRONIZAÇÃO FINAL DOS VERBETES — Moderna I
+   Regras finais para corrigir conflitos de versões anteriores.
+   ========================================================= */
+.article-page-body{min-width:0;overflow-x:hidden}
+.article-verbetes{width:min(1040px,94vw);box-sizing:border-box;margin:0 auto;padding:48px clamp(20px,5vw,70px)}
+.article-verbetes .article-title{margin:8px auto 12px;max-width:900px;text-align:center;font-size:clamp(1.7rem,4.5vw,3rem);line-height:1.18;color:var(--burg2);overflow-wrap:break-word}
+.article-verbetes .article-subtitle{display:block;max-width:820px;margin:0 auto 24px;text-align:center;color:var(--ink-soft);font-size:1.02rem;line-height:1.5;font-style:italic}
+.article-verbetes .meta-info{max-width:900px;box-sizing:border-box;overflow-wrap:anywhere}
+.article-verbetes h2{clear:both}
+.article-verbetes .texto-verbetes{max-width:820px;margin:0 auto}
+.article-verbetes .texto-verbetes p{margin:0 0 22px;line-height:1.78}
+.article-verbetes .texto-verbetes p:first-child:first-letter{float:left;font-size:3.1em;line-height:.78;padding:7px 8px 0 0;color:var(--burg);font-weight:700}
+.article-verbetes .source-figure{width:auto;max-width:100%;margin:34px auto 38px;text-align:center;overflow:visible}
+.article-verbetes .source-figure img{display:block;width:auto !important;height:auto !important;max-width:100% !important;max-height:620px !important;margin:0 auto;object-fit:contain;border:2px solid var(--gold);box-shadow:0 10px 24px var(--shadow);background:#fff}
+.article-verbetes .source-figure figcaption{box-sizing:border-box;max-width:min(760px,100%);margin:0 auto;padding:10px 14px;color:var(--ink-soft);font-style:italic;font-size:.88rem;line-height:1.45;border:1px solid var(--gold);border-top:0;background:var(--paper3);overflow-wrap:anywhere}
+.article-verbetes .imagem-atividade{width:auto;max-width:900px;margin:30px auto;text-align:center;overflow:visible}
+.article-verbetes .imagem-atividade img{display:block;width:auto !important;height:auto !important;max-width:100% !important;max-height:620px !important;margin:0 auto;object-fit:contain}
+.article-verbetes .atividade{max-width:900px;margin:50px auto 0;padding-top:8px}
+.article-verbetes .atividade>h2,.article-verbetes h2.atividade-titulo{text-align:center;font-size:clamp(1.4rem,4vw,2rem);padding:14px 12px;border-top:1px solid var(--gold);border-bottom:1px solid var(--gold);color:var(--burg2);text-transform:uppercase;letter-spacing:.04em}
+.article-verbetes .atividade-intro{box-sizing:border-box;padding:18px 22px;background:rgba(184,136,50,.08);border-left:4px solid var(--gold);margin:26px 0 30px;line-height:1.7}
+.article-verbetes .questao{box-sizing:border-box;margin:24px 0 30px;padding:20px 22px;background:rgba(255,255,255,.28);border:1px solid rgba(138,98,41,.45);box-shadow:0 5px 13px rgba(45,25,8,.08);overflow-wrap:anywhere}
+.article-verbetes .questao h3{margin:0 0 12px;color:var(--navy);font-size:1.04rem;letter-spacing:.06em;text-transform:uppercase}
+.article-verbetes .questao p{line-height:1.68}
+.article-verbetes .questao .orientacao{margin-top:18px;padding-top:13px;border-top:1px dashed rgba(169,130,69,.55);font-style:italic;color:var(--ink-soft)}
+.article-verbetes .alternativas{list-style:none!important;padding:0!important;margin:14px 0 0!important}
+.article-verbetes .alternativas li{margin:7px 0;padding:9px 12px;border-bottom:1px solid rgba(169,130,69,.35);text-align:left!important;text-indent:0!important;line-height:1.55}
+.article-verbetes .referencias,.article-verbetes .referencias-titulo{max-width:900px;margin-left:auto;margin-right:auto}
+.article-verbetes .referencias li{line-height:1.55;margin-bottom:8px;overflow-wrap:anywhere}
+@media(max-width:700px){
+ .article-verbetes{width:calc(100% - 14px);padding:38px 17px}
+ .article-verbetes .article-title{font-size:clamp(1.5rem,7.4vw,2.2rem)}
+ .article-verbetes .texto-verbetes p{line-height:1.7}
+ .article-verbetes .source-figure{margin:26px auto 30px}
+ .article-verbetes .source-figure img,.article-verbetes .imagem-atividade img{max-width:100% !important;max-height:none !important}
+ .article-verbetes .source-figure figcaption{font-size:.82rem;padding:9px 10px}
+ .article-verbetes .atividade-intro{padding:15px 16px}
+ .article-verbetes .questao{padding:17px 16px}
+}
